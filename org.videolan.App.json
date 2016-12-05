@@ -1,0 +1,1596 @@
+{
+  "app-id": "org.videolan.App",
+  "runtime": "com.endlessm.Platform",
+  "runtime-version": "master",
+  "sdk": "com.endlessm.Sdk",
+  "branch": "master",
+  "command": "vlc",
+  "separate-locales": false,
+  "finish-args": [
+    "--share=ipc",
+    "--socket=x11",
+    "--socket=pulseaudio",
+    "--share=network",
+    "--filesystem=home",
+    "--talk-name=org.mpris.MediaPlayer2.Player",
+    "--own-name=org.mpris.MediaPlayer2.vlc"
+  ],
+  "modules": [
+    {
+      "name": "vlc",
+      "no-autogen": true,
+      "sources": [
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/f/fonts-freefont/fonts-freefont-ttf_20120503-4_all.deb",
+          "sha256": "35b2b6b3a9d9809bc9aa6e094d522b3952ec510acc241ff04df2549b1df1415b",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/g/gcc-4.9/gcc-4.9-base_4.9.2-10_amd64.deb",
+          "sha256": "f95eb436176050f52e85ed5eebe12c3d851b6788735df860e18a219647d330d8",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/g/gcc-4.9/libgcc1_4.9.2-10_amd64.deb",
+          "sha256": "a1402290165e8d91b396a33d79580a4501041e92bdb62ef23929a0c207cd9af9",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/g/glibc/libc6_2.19-18+deb8u6_amd64.deb",
+          "sha256": "ee4d9dea08728e2c2bbf43d819c3c7e61798245fab4b983ae910865980f791ad",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/g/glibc/multiarch-support_2.19-18+deb8u6_amd64.deb",
+          "sha256": "fe270d815cc98e15dc3b42aeeb79ceaab7a7606fef170038111b5ca6dd9c686a",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/g/gpm/libgpm2_1.20.4-6.1+b2_amd64.deb",
+          "sha256": "673753f8d8f2af5d630463b960157d9086d8253d94b16e019eb81f0c3c056355",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/n/ncurses/libtinfo5_5.9+20140913-1+b1_amd64.deb",
+          "sha256": "f4af50c913d52fbcfb8aca140e68a3ea4414158b983c600b4ee6281cdaf60b81",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/n/ncurses/libncurses5_5.9+20140913-1+b1_amd64.deb",
+          "sha256": "ae6fd50a5346f94b8c3904de52c5aadf58dbd13f8d016d8954a0f4a65a14b637",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/s/slang2/libslang2_2.3.0-2_amd64.deb",
+          "sha256": "f1b72689f30ab841119131fafc1c01361f0f4518865afa6cadbfde313556cb10",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/libx/libx11/libx11-data_1.6.2-3_all.deb",
+          "sha256": "fcf58a1bd20d9557baf253a624704450b627184a34879efb48fc1968a4645cfa",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/libx/libxau/libxau6_1.0.8-1_amd64.deb",
+          "sha256": "b03b2d0d400c2002a2d38300bd6630306abb0ff325c3d4a4447ecceb58335228",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/libx/libxdmcp/libxdmcp6_1.1.1-1+b1_amd64.deb",
+          "sha256": "6758bc820616254634fdd2354a2691e40d2973d6bf3a9c12417f02770f75081c",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/libx/libxcb/libxcb1_1.10-3+b1_amd64.deb",
+          "sha256": "07bf131f4f0f8a9f1a023ab88cce3a1d12cc7222d3c7f08f00b60a3699af5188",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/libx/libx11/libx11-6_1.6.2-3_amd64.deb",
+          "sha256": "cc2e144e3bf5bdbc51d24723a93e5910e0bf8fbdc43b93e51edfc91968a25f45",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/a/aalib/libaa1_1.4p5-43_amd64.deb",
+          "sha256": "18d1f6e8303ddab018ab2849ffe545051830f854c2c20328145c2d618ff92dce",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://security.debian.org/debian-security/pool/updates/main/liba/libav/libavutil54_11.8-1~deb8u1_amd64.deb",
+          "sha256": "34f2812d237d060bfeeff56795eb0aa94eb9b0abfec29e18824df5f58cce0223",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://security.debian.org/debian-security/pool/updates/main/liba/libav/libavresample2_11.8-1~deb8u1_amd64.deb",
+          "sha256": "df897cdc4f34a2927d2913a17cc859b09fb0050ad5808028ace9eb1ace61f8e7",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/libg/libgsm/libgsm1_1.0.13-4_amd64.deb",
+          "sha256": "5fb33cf1e603787239990ba65f7c32a852db8d473b12b85a3cb504263e0ea35f",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/l/lame/libmp3lame0_3.99.5+repack1-7+deb8u1_amd64.deb",
+          "sha256": "09d8a1e90eb088d9c87644a110c5577f59128e8a7314e8c4558f862e2fbe336c",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/o/openjpeg/libopenjpeg5_1.5.2-3_amd64.deb",
+          "sha256": "89f519c844ec72653c3404dc46352b40db33f8831392dca84c0fff03ea091147",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/o/opus/libopus0_1.1-2_amd64.deb",
+          "sha256": "b376bc8793a771b96b7e8b0698e4ead621688891eed40c7042d34bcb521272fb",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/o/orc/liborc-0.4-0_0.4.22-1_amd64.deb",
+          "sha256": "71ec2d256d265f5857985b71b368b917edc912f530d5ea9d88c76f4589efca8c",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/g/gcc-4.9/libstdc++6_4.9.2-10_amd64.deb",
+          "sha256": "f1509bbabd78e89c861de16931aec5988e1215649688fd4f8dfe1af875a7fbef",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/s/schroedinger/libschroedinger-1.0-0_1.0.11-2.1_amd64.deb",
+          "sha256": "9dccd2d6fa4f973836f4519d2d768158642b9526ad27d0b414987e29cf30d88c",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/s/speex/libspeex1_1.2~rc1.2-1_amd64.deb",
+          "sha256": "7a07d85e42e00c10fcfe59c60786d3401594fec244e2b823d51d443447d9dd64",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/libo/libogg/libogg0_1.3.2-1_amd64.deb",
+          "sha256": "dc596aeecf952e2fba3b1650e50a146a595c8032aec5776c1711bcc4fb075ad0",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/libt/libtheora/libtheora0_1.1.1+dfsg.1-6_amd64.deb",
+          "sha256": "2093c69920ad2bcc6d624fba0886e7650e36d2e8609a9b1d9ed4d0f6ed69ebb4",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/libv/libva/libva1_1.4.1-1_amd64.deb",
+          "sha256": "dd3d2a0fefe43aea7b529e805653a7243f8c75808dd5aaa676a0a0cc4e64c58c",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/libv/libvorbis/libvorbis0a_1.3.4-2_amd64.deb",
+          "sha256": "faa77cea87aa9e6a8f9e7754d3a534e6498d9c96fa5235db06a1f55686caedde",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/libv/libvorbis/libvorbisenc2_1.3.4-2_amd64.deb",
+          "sha256": "27a2324079153546250c97556098a20c2263f15a140255afe98e86ed49997cf3",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/libv/libvpx/libvpx1_1.3.0-3_amd64.deb",
+          "sha256": "14820ca6a795ce534a8292338ddda0a5af747a66f8091d88265107b2782cec19",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/x/x264/libx264-142_0.142.2431+gita5831aa-1+b2_amd64.deb",
+          "sha256": "8425f36e01b971773bfc3307631b0d171016aa731baa0d865cf30653977aed28",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/x/xvidcore/libxvidcore4_1.3.3-1_amd64.deb",
+          "sha256": "91171c49bf7db84356f8a0e2662d572a7a86d89147e531d01945d03d69d573f4",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/z/zlib/zlib1g_1.2.8.dfsg-2+b1_amd64.deb",
+          "sha256": "b75102f61ace79c14ea6f06fdd9509825ee2af694c6aa503253df4e6659d6772",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://security.debian.org/debian-security/pool/updates/main/liba/libav/libavcodec56_11.8-1~deb8u1_amd64.deb",
+          "sha256": "e8e1d4d57e1b0ba037fc3863a989fe262c921bf05f45b7b0dd14cca9681ce2db",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/o/opencore-amr/libopencore-amrnb0_0.1.3-2.1_amd64.deb",
+          "sha256": "378a1876e2441cd13cedfce79bfd5aaad9f19e054773ee1e97bd886426b5247d",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/o/opencore-amr/libopencore-amrwb0_0.1.3-2.1_amd64.deb",
+          "sha256": "f937bc1d351db9ba6289b4328c760495b0b3cfa97d83c33cd7ccc0c98baf785c",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/v/vo-aacenc/libvo-aacenc0_0.1.3-1_amd64.deb",
+          "sha256": "ef7333df21551235db58182cebf57c132f1eca8284e291c2588449c7208bc2c0",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/v/vo-amrwbenc/libvo-amrwbenc0_0.1.3-1_amd64.deb",
+          "sha256": "a5fa02740969c580fcbc06bed0f781aef6890e7120f1903779a5f9b06f14ce65",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://security.debian.org/debian-security/pool/updates/main/liba/libav/libavcodec-extra-56_11.8-1~deb8u1_amd64.deb",
+          "sha256": "c8dc8c2b06972fdde2586480f91e73f133c96a2619ef9772024b98b01e7ba95b",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/n/ncurses/libncursesw5_5.9+20140913-1+b1_amd64.deb",
+          "sha256": "c009ac85e49ef89970995909b079c232e2970bc5cdc645d8e4240150be7f4731",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/libc/libcaca/libcaca0_0.99.beta19-2_amd64.deb",
+          "sha256": "9c97df644d2c419d71c5656ef2bc155c422aaea4f25fe1a9a6e5dcbbb9197f40",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/libd/libdrm/libdrm2_2.4.58-2_amd64.deb",
+          "sha256": "71f8ee27453d46ab42afb83143cda72b8453673dbb8d9ed4ebdb286a0388946c",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/e/expat/libexpat1_2.1.0-6+deb8u3_amd64.deb",
+          "sha256": "682d2321297c56dec327770efa986d4bef43a5acb1a5528b3098e05652998fae",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/libd/libdrm/libdrm-nouveau2_2.4.58-2_amd64.deb",
+          "sha256": "b11481916f0faefdfd3eec7379129ced7e18252f5f505abb5a1d432b388cfffa",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/libd/libdrm/libdrm-radeon1_2.4.58-2_amd64.deb",
+          "sha256": "e8dddb408873157ef928a87e461a85e720448cbea3c01f2c5f9d03ff158b74cd",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/e/elfutils/libelf1_0.159-4.2_amd64.deb",
+          "sha256": "bcdbb9a4949a60d07aa69b1f414736f818af3b6bd4f699d137383a1a93f8fa58",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/m/mesa/libglapi-mesa_10.3.2-1+deb8u1_amd64.deb",
+          "sha256": "8f77452524501072c09676bd1acf4b71d864d7d2a18fa8158aa5a5cb0bc3ade3",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/g/gcc-4.9/libatomic1_4.9.2-10_amd64.deb",
+          "sha256": "6ec69b0aaa26fcc8a54198f420a38eb1e390dec942f2509313907c9ed65b9422",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/libb/libbsd/libbsd0_0.7.0-2_amd64.deb",
+          "sha256": "86573a9b5b774f6a5e87ecfb52a8ab31ad5a8469d3971856fa91f4f6ea7f3c69",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/libe/libedit/libedit2_3.1-20140620-2_amd64.deb",
+          "sha256": "3a57eaaeaf34dae83ea5c9fa55b4600a686351d6138a5735c922c9dbb88d1248",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/libf/libffi/libffi6_3.1-2+b2_amd64.deb",
+          "sha256": "481af9931f3352a51a579511a20ff3d57068681d6c760513590200a71fe49a50",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/l/llvm-toolchain-3.5/libllvm3.5_3.5-10_amd64.deb",
+          "sha256": "eed6c96c457b8e7e7c4d658dd4cae5ad54e7bd126d6fac89e6371a5e14b3e6c6",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/s/systemd/libudev1_215-17+deb8u5_amd64.deb",
+          "sha256": "f1f1cb26bee9c2ba2879295a4db3eb4c0646bf2b7f317e74ddb23357e749f648",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/w/wayland/libwayland-client0_1.6.0-2_amd64.deb",
+          "sha256": "dfb1cf0048f35ec1da9752ee9966aaf8014d1ee160377d0e4631d526e328ab31",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/w/wayland/libwayland-server0_1.6.0-2_amd64.deb",
+          "sha256": "8954be62de87a6a0a63ca1438b8e6386cd2f2708af2125c1c57ec72421f53893",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/m/mesa/libgbm1_10.3.2-1+deb8u1_amd64.deb",
+          "sha256": "fb27bb530a7529ddb508d6906e0215f7da45a20ebd1e26330e54c3ac14db328e",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/libx/libx11/libx11-xcb1_1.6.2-3_amd64.deb",
+          "sha256": "eaf29676eb974802864c475406eea03f768af942bfde1ba02a11c28aa0af60ea",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/libx/libxcb/libxcb-dri2-0_1.10-3+b1_amd64.deb",
+          "sha256": "fa5ae5e2942d999e453715b382977b2ffcf46824115e2709f26a7f1280780e7f",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/libx/libxcb/libxcb-render0_1.10-3+b1_amd64.deb",
+          "sha256": "1277261ed3b901d70b01901836b2f6d89235dd6777636f3f26b5d2979f1c7e22",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/libx/libxcb/libxcb-shape0_1.10-3+b1_amd64.deb",
+          "sha256": "e27eb5d33caf0c56506ec3180a0ff181ff343e6024412e2ba265a118977e7e59",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/libx/libxcb/libxcb-xfixes0_1.10-3+b1_amd64.deb",
+          "sha256": "a96c4caee052dcd1db0a5eebbec405d7b1e3b44757284319346d5de4f1788bb5",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/m/mesa/libegl1-mesa_10.3.2-1+deb8u1_amd64.deb",
+          "sha256": "00188dd83be207b54f9f28672dd0fe0c312ac52dbbc319ec808ce09c69ec5eba",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/f/freerdp/libwinpr-sysinfo0.1_1.1.0~git20140921.1.440916e+dfsg1-4_amd64.deb",
+          "sha256": "b3238cd49ff46c4e7ecd446b688d13a34e63eeb91e1110c7d8fb9593b84fb5c4",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/f/freerdp/libfreerdp-primitives1.1_1.1.0~git20140921.1.440916e+dfsg1-4_amd64.deb",
+          "sha256": "cfad2556e3de48d43ffde53d7969a1fcdbfd0003215e8bb294237014aec71ad7",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/b/bzip2/libbz2-1.0_1.0.6-7+b3_amd64.deb",
+          "sha256": "5930454002ca3bbf13ff3d2829252de1ec512617f5d2b997d3c6006e176d6c38",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/x/xz-utils/liblzma5_5.1.1alpha+20120614-2+b3_amd64.deb",
+          "sha256": "a60661f537292862f9bfa4c421df5af126da5032def818a0bf38c49b68656328",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/p/pcre3/libpcre3_8.35-3.3+deb8u4_amd64.deb",
+          "sha256": "f513a611c0ba9b8496fe5b8bc5bd9a39c924e134d5230801dd92e429d77e204e",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/libs/libselinux/libselinux1_2.3-2_amd64.deb",
+          "sha256": "37bf5f0d0d50579bdff97098ff330cb44dd0148e20db91aa3848dd19c698e528",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/a/attr/libattr1_2.4.47-2_amd64.deb",
+          "sha256": "ebe8b6a4c62b88db772f05c05b50d8b9f66f4d46488c547bda5042ae36865d88",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/a/acl/libacl1_2.2.52-2_amd64.deb",
+          "sha256": "209a2c0c192d7debe0453a671f443dc73120c8c062ce66abe44afd06e711c801",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://security.debian.org/debian-security/pool/updates/main/t/tar/tar_1.27.1-2+deb8u1_amd64.deb",
+          "sha256": "1ce092bb49f0ad486c339e0d87917168455bc92758b92d787360338ca578ef09",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/d/dpkg/dpkg_1.17.27_amd64.deb",
+          "sha256": "a7447fff98bec9bb0bb0ba3c0555232f90094c35d41ef5c5746c1ff9790d5a39",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/p/perl/perl-base_5.20.2-3+deb8u6_amd64.deb",
+          "sha256": "d4957a3ccb9c311c6a24df2f45652b3a72e854daa79cb8675e9d501389ba11e0",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/d/debconf/debconf_1.5.56_all.deb",
+          "sha256": "bc773e0b34097ec23baeb08c48f66639a88c23815b0ca9903710c6cc2c8e9041",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://security.debian.org/debian-security/pool/updates/main/o/openssl/libssl1.0.0_1.0.1t-1+deb8u5_amd64.deb",
+          "sha256": "e38239b8ab5e2b944aafe1f7484f3cab1100f8807a2e104b026adebda71afba6",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/f/freerdp/libwinpr-crt0.1_1.1.0~git20140921.1.440916e+dfsg1-4_amd64.deb",
+          "sha256": "bf244aae4c7cfb87e7975a65de874107b068a7582380800e03c3a2b5b249da5d",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/f/freerdp/libwinpr-environment0.1_1.1.0~git20140921.1.440916e+dfsg1-4_amd64.deb",
+          "sha256": "03b6977dec4049e6578379d60756fceac759a88c58330e081e1acccc1e46e3f3",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/f/freerdp/libwinpr-handle0.1_1.1.0~git20140921.1.440916e+dfsg1-4_amd64.deb",
+          "sha256": "30b671578b8702ee6a5ed3845032690a648bb6eb70655f6de92811070bb0938e",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/f/freerdp/libwinpr-heap0.1_1.1.0~git20140921.1.440916e+dfsg1-4_amd64.deb",
+          "sha256": "e328f15b18aad707346562e84b85af9d76dfe75bf53c58fce0e7c5e315e1ed14",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/f/freerdp/libwinpr-interlocked0.1_1.1.0~git20140921.1.440916e+dfsg1-4_amd64.deb",
+          "sha256": "7607454d1db1ccdaa65a84af628973242c55ff9c2f0cfb5c2cbeac3af4e1b7d1",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/f/freerdp/libwinpr-path0.1_1.1.0~git20140921.1.440916e+dfsg1-4_amd64.deb",
+          "sha256": "159cb5ad304b6e0e5be3a8f0dbd077a53cf3c312c85838ab12e1a521641efd84",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/f/freerdp/libwinpr-thread0.1_1.1.0~git20140921.1.440916e+dfsg1-4_amd64.deb",
+          "sha256": "7a05c88e2d05b3abdcc054557b412b423b4023c2f5f60a7ff71e3dca23bc7f41",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/f/freerdp/libwinpr-synch0.1_1.1.0~git20140921.1.440916e+dfsg1-4_amd64.deb",
+          "sha256": "05437c60be255cf653c63a7bbfd3c3d6f71d34f7f76c021426969758aeb6ae5b",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/f/freerdp/libwinpr-utils0.1_1.1.0~git20140921.1.440916e+dfsg1-4_amd64.deb",
+          "sha256": "703472fe4fa33818f2180c7eb2ab36d702ba02a3bdbf19fe58871d640cbbaf73",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/f/freerdp/libfreerdp-utils1.1_1.1.0~git20140921.1.440916e+dfsg1-4_amd64.deb",
+          "sha256": "195ea238b0f83420717dc943956adc78b53dff30422f4b70523526b5242b7e2b",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/libj/libjpeg-turbo/libjpeg62-turbo_1.3.1-12_amd64.deb",
+          "sha256": "ac397a0c8d16891dbc0348a9ee30506b8b4cafe138a25b3af9e3cd0b417fab3d",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/f/freerdp/libwinpr-pool0.1_1.1.0~git20140921.1.440916e+dfsg1-4_amd64.deb",
+          "sha256": "7907023f5bfb801551e5b1e3911d90b5fe269beab3dae08a667dabd04ab8f141",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/f/freerdp/libwinpr-registry0.1_1.1.0~git20140921.1.440916e+dfsg1-4_amd64.deb",
+          "sha256": "bb57d52b07c2d318ddab69bcc23db694a39286285c59563b2ec38ec1926319d0",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/f/freerdp/libfreerdp-codec1.1_1.1.0~git20140921.1.440916e+dfsg1-4_amd64.deb",
+          "sha256": "5152af41ef9038d599e70b403884993eab92d52e50f490a281a84748bc237e62",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/f/freerdp/libwinpr-file0.1_1.1.0~git20140921.1.440916e+dfsg1-4_amd64.deb",
+          "sha256": "73d4fc584924b802c2cbb2b17cca4c634bc86cf189bd6fbd05ae8ec3b64c8222",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/f/freerdp/libwinpr-library0.1_1.1.0~git20140921.1.440916e+dfsg1-4_amd64.deb",
+          "sha256": "8a1fa37fc8e8e3c14ab0758ab59517bf9bbe02cc9ecae529886f3dac830ee8dc",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/f/freerdp/libfreerdp-common1.1.0_1.1.0~git20140921.1.440916e+dfsg1-4_amd64.deb",
+          "sha256": "f8d7ec38dd810987856c0f5168dd600cd60bee5b3748cb06b535daf8f0e89ae1",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/f/freerdp/libwinpr-crypto0.1_1.1.0~git20140921.1.440916e+dfsg1-4_amd64.deb",
+          "sha256": "3e72d954feadf3defc9b8cef3c4c5f59abfbc98980be7719f4be69db3d04e679",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/f/freerdp/libwinpr-sspi0.1_1.1.0~git20140921.1.440916e+dfsg1-4_amd64.deb",
+          "sha256": "205f770adbcd292f4ef7cac172a0733866cddf3595d8ecb3cd0a148ad1bc5033",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/f/freerdp/libfreerdp-crypto1.1_1.1.0~git20140921.1.440916e+dfsg1-4_amd64.deb",
+          "sha256": "cf2378c7a1523ee8e783183bc705c96ec7a12a0187ab09a7a298fcb811f4f9f8",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/f/freerdp/libwinpr-input0.1_1.1.0~git20140921.1.440916e+dfsg1-4_amd64.deb",
+          "sha256": "6a660cd6b3d3f852ffb1092242867a610b69b41457b97e43fb094d71944abfb0",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/libx/libxkbfile/libxkbfile1_1.0.8-1_amd64.deb",
+          "sha256": "0038ed436f01c348e1776ed245f3a4f77caed7837fdf99683b8976700936c0c6",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/f/freerdp/libfreerdp-locale1.1_1.1.0~git20140921.1.440916e+dfsg1-4_amd64.deb",
+          "sha256": "3a1e770d96b261e49f24336cf8b3601613eb3772c0846b27df35e2830c6f7281",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/f/freerdp/libwinpr-dsparse0.1_1.1.0~git20140921.1.440916e+dfsg1-4_amd64.deb",
+          "sha256": "3b97ae57036e868433440853f9658f424f491db19a8416877a1bbb2a0ac00008",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/f/freerdp/libwinpr-rpc0.1_1.1.0~git20140921.1.440916e+dfsg1-4_amd64.deb",
+          "sha256": "64c4d34d54e9caab0e9e60e9edfac7f6161aee1e98d39ee86825fc8a9b76317d",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/f/freerdp/libfreerdp-core1.1_1.1.0~git20140921.1.440916e+dfsg1-4_amd64.deb",
+          "sha256": "9d2b7ecc5b04f27eee53ab9fb111e525ec99d3a7ce9f32343084c3c14b855432",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/f/freerdp/libfreerdp-cache1.1_1.1.0~git20140921.1.440916e+dfsg1-4_amd64.deb",
+          "sha256": "57e4cda460de1988b0d6ca2a10d32efcf13e9834fdb213b194278346054d16f4",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/f/freerdp/libfreerdp-client1.1_1.1.0~git20140921.1.440916e+dfsg1-4_amd64.deb",
+          "sha256": "4ac35713478ea13df21c0d7f69f05eeb428d964f9a8afbe89cba5020c6138264",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/f/freerdp/libfreerdp-gdi1.1_1.1.0~git20140921.1.440916e+dfsg1-4_amd64.deb",
+          "sha256": "75579919af878e33e357b582ec466c541851340899162a42396778480d422caa",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/f/freerdp/libfreerdp-rail1.1_1.1.0~git20140921.1.440916e+dfsg1-4_amd64.deb",
+          "sha256": "6f426ce67f3f3ffed1082fe65f7e32051716e2e2128a817f147f02eefd42ef6e",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/libp/libpng/libpng12-0_1.2.50-2+deb8u2_amd64.deb",
+          "sha256": "a57b6d53169c67a7754719f4b742c96554a18f931ca5b9e0408fb6502bb77e80",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/f/freetype/libfreetype6_2.5.2-3+deb8u1_amd64.deb",
+          "sha256": "80184d932f9b0acc130af081c60a2da114c7b1e7531c18c63174498fae47d862",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/f/fribidi/libfribidi0_0.19.6-3_amd64.deb",
+          "sha256": "9bd3007e8721466dcdaaf8e0847ddcd4c3487b6ee2435aea0a5fbfae3e88ad47",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/libx/libxcb/libxcb-dri3-0_1.10-3+b1_amd64.deb",
+          "sha256": "5eea4f41c265aa101f9332977f7d96ec05bf0f24a1d530b3864bb4bb4840beed",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/libx/libxcb/libxcb-glx0_1.10-3+b1_amd64.deb",
+          "sha256": "e3070d03769195907b0cfe230e4c1825a3edb8d34ce71e305abc82f51cf9b141",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/libx/libxcb/libxcb-present0_1.10-3+b1_amd64.deb",
+          "sha256": "4c7b32c9a936d579e15923ea1a6b4b0a3628c1cee4e104e9df4680af5246fb6f",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/libx/libxcb/libxcb-sync1_1.10-3+b1_amd64.deb",
+          "sha256": "e29f0bf4f18bdf0884e4a9e01362599a081538fd8ad301c2ebbaaa2b6cd39a66",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/libx/libxfixes/libxfixes3_5.0.1-2+b2_amd64.deb",
+          "sha256": "c91a70500eb6fa104e64e8a5928707a2a882bbaabfa7620cd56e833d837d4c37",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/libx/libxdamage/libxdamage1_1.1.4-2+b1_amd64.deb",
+          "sha256": "c2b13deaa87dbad7d541e29755464f125409b9d4d038d6982bb9f8f35939b817",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/libx/libxext/libxext6_1.3.3-1_amd64.deb",
+          "sha256": "5105f77289a7e08faaf3bb4c16c6945cafca65b9bdb4792fef820045ab43e568",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/libx/libxshmfence/libxshmfence1_1.1-4_amd64.deb",
+          "sha256": "4134109610a5c35b6a5220ae05dda94bc9aac571b4a38c6bd2805f0fcf93ef35",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/libx/libxxf86vm/libxxf86vm1_1.1.3-1+b1_amd64.deb",
+          "sha256": "3eaa8094d0970b3601a4a5cc6e50f8b8566bafa47b25f1a025f765751a01d0bf",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/m/mesa/libgl1-mesa-glx_10.3.2-1+deb8u1_amd64.deb",
+          "sha256": "de91fad0ffb35ba497ec146ccfa261df79dced33ffc6f9e229435dadeac49e64",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/m/mesa/libgles1-mesa_10.3.2-1+deb8u1_amd64.deb",
+          "sha256": "9481f6404770caa28c97cbfc7e397387a16cda65903b79f4277209397dd74e5e",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/m/mesa/libgles2-mesa_10.3.2-1+deb8u1_amd64.deb",
+          "sha256": "f3a180cad912e909bb223838eb2c06890a721eb3aaa00fddd12bdb329a716b36",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/l/lsb/lsb-base_4.1+Debian13+nmu1_all.deb",
+          "sha256": "1a200ffcc9d21838768f3acdc512e6ad6a8502bb70ecd3f597b660a56acaf739",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/x/xorg/x11-common_7.7+7_all.deb",
+          "sha256": "5ea7301f38ffdfd987655e55b7ce74aa556718f20fca79077e0cf69372022c95",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/libi/libice/libice6_1.0.9-1+b1_amd64.deb",
+          "sha256": "6b6aefe57b52ac77dc0891c96f6f00472fdd1e9d14128aa5a60e337c5602158d",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/liba/libasyncns/libasyncns0_0.8-5_amd64.deb",
+          "sha256": "def39be949207b17a2ce75e8fdc2cab05d05b80c868a7ff9c51fb6372a13b924",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/libc/libcap2/libcap2_2.24-8_amd64.deb",
+          "sha256": "3a6e19c975e594b5f251be2e1ac75da15515db7b324d2b62de3f823857eb3554",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/d/dbus/libdbus-1-3_1.8.20-0+deb8u1_amd64.deb",
+          "sha256": "a8fb09a445c2c35e087fe8131baa32bfe7f5c4f24e5382c5113bf288c84730bc",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/j/json-c/libjson-c2_0.11-4_amd64.deb",
+          "sha256": "bde89cf8ff7876889e17fda0245f4dd3e829b6f89e617272637c1692c84dd694",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/s/sensible-utils/sensible-utils_0.0.9_all.deb",
+          "sha256": "c848f80734e61379b5baac315c2342b2fea18d246074e6f5510fc643f5024978",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/d/debianutils/debianutils_4.4+b1_amd64.deb",
+          "sha256": "3d18d183b79d259e0ca77d65904c55810d70443743967c77f1a0aebf2dd94fb1",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/a/audit/libaudit-common_2.4-1_all.deb",
+          "sha256": "be7f873c8f149b53b8cc3c337b067050d18208cb0de3f8cf6114a29bd20a17e3",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/a/audit/libaudit1_2.4-1+b1_amd64.deb",
+          "sha256": "c51ba54837876bc5bb95688be5321303e7fbcbb384d3038797a22933bb87ef6d",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/d/db5.3/libdb5.3_5.3.28-9_amd64.deb",
+          "sha256": "2519377e74e5a4cbc409f3d98f0e830ac5828e885a0f6e5a6c5aba84f9c991f2",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/p/pam/libpam0g_1.1.8-3.1+deb8u1+b1_amd64.deb",
+          "sha256": "4cbac104ec16d4f821b39a03be69c1d01c051c913bdfbac1cc3d9567a23eeb0c",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/p/pam/libpam-modules-bin_1.1.8-3.1+deb8u1+b1_amd64.deb",
+          "sha256": "319a972b19e2ce084948ea35ad94ae64aa3aa1772014f10b9c3f2f2f4253735d",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/p/pam/libpam-modules_1.1.8-3.1+deb8u1+b1_amd64.deb",
+          "sha256": "4c6ba8b5a7bbba3fb17a84c1df7f25f6075e50c1a905b98d36e3357b8d2cdace",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/libs/libsemanage/libsemanage-common_2.3-1_all.deb",
+          "sha256": "6cee4cf858797141ecb5775f33a82cb7ffb5d2c047a0fb9f4ed08005b9c33671",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/libs/libsepol/libsepol1_2.3-2_amd64.deb",
+          "sha256": "809665fb316152e1c862873abe1f4358302ab8bdab9b034bbe178f0e68257f56",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/u/ustr/libustr-1.0-1_1.0.4-3+b2_amd64.deb",
+          "sha256": "e04f13c3b977bdcd80a2d3f9c45bf2ed336fb5398fbb9f86873f722d8bd1784a",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/libs/libsemanage/libsemanage1_2.3-1+b1_amd64.deb",
+          "sha256": "1d8e7b5c75e6b60769241da5f33c6befffb1a8dc5826474b3191f8f1d1690634",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/s/shadow/passwd_4.2-3+deb8u1_amd64.deb",
+          "sha256": "d3968bb6ce59afaecc9912c586d8faaea01dd42255b7171541996de56678ddc5",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/u/util-linux/libuuid1_2.25.2-6_amd64.deb",
+          "sha256": "ab7821a322a6c137eb7b36297eba11a5d2a3d3c27e480a238ff4538898570fb9",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/libs/libsm/libsm6_1.2.2-1+b1_amd64.deb",
+          "sha256": "4e2239321aaeffef7dc4a4b4196bb3b3d3b11a4b3b613818e18cc96ab9ee1508",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/f/flac/libflac8_1.3.0-3_amd64.deb",
+          "sha256": "a896332bb1d649b0ff8997d9f17a5c40275451d084de6227a3a4ef0269f5e4b0",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/libs/libsndfile/libsndfile1_1.0.25-9.1+deb8u1_amd64.deb",
+          "sha256": "380f699ef71bf56689d85b3870c198ba233dfb631b9c0318e1107be507fecaff",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/libg/libgpg-error/libgpg-error0_1.17-3_amd64.deb",
+          "sha256": "7b156391cb5aef83df692bf4f966313d5fbd96481945dc65b384471067d16124",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/libg/libgcrypt20/libgcrypt20_1.6.3-2+deb8u2_amd64.deb",
+          "sha256": "7c6f0e2db9c1442b0e4d42c54cc953032601968b126a2764f4414e61f678894d",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/s/systemd/libsystemd0_215-17+deb8u5_amd64.deb",
+          "sha256": "4ae6ada1fcd4dd373541b7a8e3ad95ced83c062ac6843c5b7aa5310e97f9315d",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/t/tcp-wrappers/libwrap0_7.6.q-25_amd64.deb",
+          "sha256": "ee84eb5c88b2861337e8a695fdd4181c9f2757359cdd4e7eb1e70988ecf572cf",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/libx/libxi/libxi6_1.7.4-1+b2_amd64.deb",
+          "sha256": "de09bfa8a26b9d2164026163bb468f3b3c7245f9ef3624db4ebe1ad79515d1aa",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/libx/libxtst/libxtst6_1.2.2-1+b1_amd64.deb",
+          "sha256": "b01d143b2c607363f4ec41895da25ccbcb5a6a3923245c171786f97332d2e248",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/p/pulseaudio/libpulse0_5.0-13_amd64.deb",
+          "sha256": "4958457ad7edff49073b77c7d86f93c3f4cd67c294a69082b57ea026f544124b",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/g/glib2.0/libglib2.0-0_2.42.1-1+b1_amd64.deb",
+          "sha256": "a4b30c84c0c050f23a986fbc576daa04b246ab816ec0fcb0b471d19aa2689a97",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/q/qt4-x11/qtcore4-l10n_4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1_all.deb",
+          "sha256": "cd01807de060b3ec83e7de24242c6723b1069887a0c5f8cbeddb299db8975c60",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/q/qt4-x11/libqtcore4_4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1_amd64.deb",
+          "sha256": "b674042bd97db346576b98e59bd0ea648de2ab883b1bde85fc3062ac1a282bea",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/f/fonts-dejavu/fonts-dejavu-core_2.34-1_all.deb",
+          "sha256": "002c9fa9445cfec4964637f22c73265d8a868f0810104452a6c906af52e43dab",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/t/ttf-bitstream-vera/ttf-bitstream-vera_1.10-8_all.deb",
+          "sha256": "328def7f581bf94b3b06d21e641f3e5df9a9b2e84e93b4206bc952fe8e80f38a",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/f/fonts-liberation/fonts-liberation_1.07.4-1_all.deb",
+          "sha256": "5490dd0b745bae9aa0c9a31ab75597229042d8fb45910ebbc21fe04f0cb1b87b",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/c/coreutils/coreutils_8.23-4_amd64.deb",
+          "sha256": "6d3764c746887015c88c684aecc14dd1317eefeb76ba2acdf59d9ad5e4d97236",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/u/ucf/ucf_3.0030_all.deb",
+          "sha256": "1b93d9fc5930b9d8382705b71605e07fe11f4796db239b7ac2644bf4fbd7f6a2",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/f/fontconfig/fontconfig-config_2.11.0-6.3+deb8u1_all.deb",
+          "sha256": "f7963c0338fd031101f3f684a4e37306eefcd05094220947dd9cb7388a2fe85f",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/f/fontconfig/libfontconfig1_2.11.0-6.3+deb8u1_amd64.deb",
+          "sha256": "0bb54d61c13aa5b5253cb5e08aaca0dfc4c626a05ee30f51d0e3002cda166fec",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/f/fontconfig/fontconfig_2.11.0-6.3+deb8u1_amd64.deb",
+          "sha256": "5383eabf18c4c3dc3d581d1efea0e6ccbfd2c08a6a98cd3e6c491b1a99759375",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/libx/libxt/libxt6_1.1.4-1+b1_amd64.deb",
+          "sha256": "e35e3430bd59f6ba26690836098428867f44176f0eb64c8ac9f20591416d3be4",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/n/nas/libaudio2_1.9.4-3_amd64.deb",
+          "sha256": "f81105eb4978bfa0a49f8a8b138751e06bc27551e2b75acc0195847abdd21a78",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/l/lcms2/liblcms2-2_2.6-3+b3_amd64.deb",
+          "sha256": "4539f7234010ee670e4ca5d7f8168d05104e25f424f3a6af12093808700ed061",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/libm/libmng/libmng1_1.0.10+dfsg-3.1+b3_amd64.deb",
+          "sha256": "009d10d0aaec943c17f802a5678179f070fc01790d454c4954aa6dd1512c3aeb",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/j/jbigkit/libjbig0_2.1-3.1_amd64.deb",
+          "sha256": "d0b55e2da6648d6b91ced51e8c8ccfbe024283ffbbc1484f704ff7b0c97f8c51",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/t/tiff/libtiff5_4.0.3-12.3+deb8u1_amd64.deb",
+          "sha256": "06b4254a0a78fdf199b044975d5b750902ca8916400db7cc309deeba44dee42e",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/libx/libxrender/libxrender1_0.9.8-1+b1_amd64.deb",
+          "sha256": "8980934c84c0ebbca4158023d91ced3ddbfa028a2be25959ff4566b37eceb8f4",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/q/qt4-x11/libqtgui4_4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1_amd64.deb",
+          "sha256": "269731b0afc0eee8f856b4f8e650daeb42a2d9dddc7c31a9c377e4ce9931cdc3",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/a/alsa-lib/libasound2-data_1.0.28-1_all.deb",
+          "sha256": "3eb437f80b8042d4670367b14a017f7c530d7077aec6e0cc6368610e986d0ce8",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/a/alsa-lib/libasound2_1.0.28-1_amd64.deb",
+          "sha256": "7bc23385be5e1e54a8fa8132e8de78be0ab359e214b8b4d9cf59914d53f39bd7",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/s/sysfsutils/libsysfs2_2.1.0+repack-4_amd64.deb",
+          "sha256": "36db856d9b261e87577e565c8919e4775c604c205339b0a2adf7a4aeb9b6214d",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/d/directfb/libdirectfb-1.2-9_1.2.10.0-5.1_amd64.deb",
+          "sha256": "fa275e3afbd646513358142807c52328be958ca135e518e67f73c580e438ff67",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/libs/libsdl1.2/libsdl1.2debian_1.2.15-10+b1_amd64.deb",
+          "sha256": "d357bb3765f46e8156c2cce31a537c3f199aa61648bcad9c3c23e1a99e5dcb37",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/libw/libwebp/libwebp5_0.4.1-1.2+b2_amd64.deb",
+          "sha256": "b33210d79939500bc36fb223e08c5ee153cf81a58d7ec85401f5c8abd8b30ab7",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/s/sdl-image1.2/libsdl-image1.2_1.2.12-5+b5_amd64.deb",
+          "sha256": "e22788e9866bef5fafe9609341d8ede371f0012d2f3fe62ad92c2e7e1cef112b",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/libv/libva/libva-drm1_1.4.1-1_amd64.deb",
+          "sha256": "992c4e3e4d5fe75e068e26fb1d62fc40919ebb5bd333d94e6349351fae4d6002",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/libv/libva/libva-x11-1_1.4.1-1_amd64.deb",
+          "sha256": "2eae5c5e7e98f2fee0dd5370bda9cbec67f25f48bdb8d188d5c2ca312b0c36c4",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/libi/libidn/libidn11_1.29-1+deb8u2_amd64.deb",
+          "sha256": "de106dcbcdaf046d61ee9eaaecf04854a5e45aef78a5aac6868af32b1d2cdfe8",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/libp/libproxy/libproxy1_0.4.11-4+b2_amd64.deb",
+          "sha256": "b7b4916f37886b331027199fa6070193cd0102f1256bd0d84b1491596b68e298",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/libp/libproxy/libproxy-tools_0.4.11-4+b2_amd64.deb",
+          "sha256": "424cfcd78f48174465429882f80477091c3e7f6bd69ed77ea3ef20dfc902e579",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/v/vlc/vlc-data_2.2.4-1~deb8u1_all.deb",
+          "sha256": "ea1f614cf4fa80e722db8b2272dd50bfd3759db66fde33058d1b58a0d247240d",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/v/vlc/libvlccore8_2.2.4-1~deb8u1_amd64.deb",
+          "sha256": "73cdda1f551662662d2b1fc65ecfae53007b0da0663ceabad70fce64c49f3f1c",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/g/gmp/libgmp10_6.0.0+dfsg-6_amd64.deb",
+          "sha256": "155a31b0f716aa3dcd7ee68e9bd57e0b76a6b31f4e41fb2d953e986315437082",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/n/nettle/libnettle4_2.7.1-5+deb8u1_amd64.deb",
+          "sha256": "e2437a4d2a21a9195feb00b608c31dfee9fbb835e7a0a1121fa3503cf8ab80fb",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/n/nettle/libhogweed2_2.7.1-5+deb8u1_amd64.deb",
+          "sha256": "cd862175f8051a97da2119c800c6167dc1886df1f8484aae474314596be64495",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/p/p11-kit/libp11-kit0_0.20.7-1_amd64.deb",
+          "sha256": "50be06cb69c72cbedf6942c8b8929400ceb6e7a198c52b16698aace41e411d40",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/libt/libtasn1-6/libtasn1-6_4.2-3+deb8u2_amd64.deb",
+          "sha256": "ee4439d502ed1a6a3330011d4b114cc419b40a4cc508550d253b8d491e6a0e5e",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/g/gnutls28/libgnutls-deb0-28_3.3.8-6+deb8u3_amd64.deb",
+          "sha256": "fa400bcdabe9293b93f96011c41a9b0c4b7a9d190b22175d634c9188a5396ec0",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/libv/libvncserver/libvncclient0_0.9.9+dfsg2-6.1+deb8u1_amd64.deb",
+          "sha256": "695bcc9c58e8c1233da5433ed0756d7a7d413fc968c5f7e76f7c75f877ab9792",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/libx/libxcb/libxcb-composite0_1.10-3+b1_amd64.deb",
+          "sha256": "e69528d5f73e28ea7bdc5aebab8ec8240fe8e1328e527adf01e9a1f8d990e76e",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/x/xcb-util-keysyms/libxcb-keysyms1_0.4.0-1_amd64.deb",
+          "sha256": "5547351e0e58bdb680c376b260884153445cdb38db03e7268647b5a63be55bd3",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/libx/libxcb/libxcb-randr0_1.10-3+b1_amd64.deb",
+          "sha256": "7a2840ef74c91c0eb77bdb75fb70f58d08b15bd01423e7f94aa61a808f5b8d6c",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/libx/libxcb/libxcb-shm0_1.10-3+b1_amd64.deb",
+          "sha256": "724749f2ea6a471ba353f6a93585bf98577c2103648297fac40c46b9a08671b0",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/libx/libxcb/libxcb-xv0_1.10-3+b1_amd64.deb",
+          "sha256": "55cfabb2da7e7b3b6575e09f8b6c6e3700cb91d4f507847c32a72e6afb5b10c1",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/libx/libxinerama/libxinerama1_1.1.3-1+b1_amd64.deb",
+          "sha256": "3668c1178ac649879338192759e79879e0f5797764b448dcac6aed4b24ef495b",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/libx/libxpm/libxpm4_3.5.11-1+b1_amd64.deb",
+          "sha256": "d635ef1e69c2bdf7ac729d47908a4ea7ef0b0e0133b5538fec9969bcb7bda236",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/a/a52dec/liba52-0.7.4_0.7.4-17_amd64.deb",
+          "sha256": "36f9d936e36f07e57c994f911c7890bc02ccb62507a2e90210b6e3870f34c2d8",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/e/enca/libenca0_1.16-1_amd64.deb",
+          "sha256": "73c51d770aa2012d612b4035ec1fff4b905f08329cb53dc56d0413d23ccce37d",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/g/graphite2/libgraphite2-3_1.3.6-1~deb8u1_amd64.deb",
+          "sha256": "7bb13d6dd08e71c4fca35b8316d4a3cdf7b9f96ffbad42c3030a86d6933dc4f9",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/h/harfbuzz/libharfbuzz0b_0.9.35-2_amd64.deb",
+          "sha256": "24cb370d0dab9769ab1cce6a8362e5a785152b253319789ac6d2420f1ce42185",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/liba/libass/libass5_0.10.2-3_amd64.deb",
+          "sha256": "5e081dfe301627d9b6c5a41239c6e2a843207a025d00584ce42d61ff8812531e",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/a/avahi/libavahi-common-data_0.6.31-5_amd64.deb",
+          "sha256": "8366634609f3c4985c7ee01a1d68a9733d3dc6b54831437d8bad9d11f667c639",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/a/avahi/libavahi-common3_0.6.31-5_amd64.deb",
+          "sha256": "83bc43e646989a3f39684cf331b8fc15b009f54b88eeeb9c0851c20f4cc25310",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/a/avahi/libavahi-client3_0.6.31-5_amd64.deb",
+          "sha256": "cd0bf1b525606f38de14b50f88b841177b967273015968a13aa3d848d69729aa",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/libr/libraw1394/libraw1394-11_2.1.0-3_amd64.deb",
+          "sha256": "11a28cf2fe8cf5791463a01a70f4b06bdc415bdb7d61625d4ce4706ceeb79ab5",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/liba/libavc1394/libavc1394-0_0.5.4-2_amd64.deb",
+          "sha256": "c07a88e9489fb6953bd4e5779d2d36160922f4f4d1fc5f19b6df806a507a06d1",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/r/rtmpdump/librtmp1_2.4+20150115.gita107cef-1_amd64.deb",
+          "sha256": "639377e8325a830c5c0607cd6ae06e4f909771b87c9d16cc5de389b29bd7fbec",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://security.debian.org/debian-security/pool/updates/main/liba/libav/libavformat56_11.8-1~deb8u1_amd64.deb",
+          "sha256": "9560e7867352604348dfec41b85e24de661d09b0198889ea46acd094b13a5ec6",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/libl/liblivemedia/libbasicusageenvironment0_2014.01.13-1_amd64.deb",
+          "sha256": "b557d596be0e064aeb5678e6ab269c7ede9fd0f5b23ac4e0d110dbcc4457739b",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/libx/libxml2/libxml2_2.9.1+dfsg1-5+deb8u3_amd64.deb",
+          "sha256": "889c31413bd03e5d87421bc945b8a195b2eab9f72aa88aaf0ae566dd024632ee",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/libb/libbluray/libbluray1_0.6.2-1_amd64.deb",
+          "sha256": "c9da5b20d0e55bcfcb8c8ec8c39ddb99ff2ad0064b75c40a2d0a0a4da70cebeb",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/libc/libcddb/libcddb2_1.3.2-5_amd64.deb",
+          "sha256": "472f60d3617b7cc923d819e14284372ea9d1642faf8cc8e74d53f8d514ba9d6c",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/libc/libcdio/libcdio13_0.83-4.2_amd64.deb",
+          "sha256": "d0376a506ea063b1471beb3a1b2e50930591d30a24a8ca41b2597cfd59633ab2",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/c/chromaprint/libchromaprint0_1.2-1_amd64.deb",
+          "sha256": "c236fed28c1bd110180e333f2b554ecbcd5a8871a9f1f7e673bdfa321cd9fb73",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/c/crystalhd/libcrystalhd3_0.0~git20110715.fdd2f19-11_amd64.deb",
+          "sha256": "ac3109695534ab9f8b61d99d0309e9f1ce8cf52843dd03d7eed4aece48d49701",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/libu/libusb-1.0/libusb-1.0-0_1.0.19-1_amd64.deb",
+          "sha256": "c37c63f3496145484c93d10ba2ae3edf73ebb19164d477b0e5e96322bef9aa5d",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/libd/libdc1394-22/libdc1394-22_2.2.3-1_amd64.deb",
+          "sha256": "4f49297cd1e768dc84a054500d15dfa0f28dae38f3220a42337517b5defb4852",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/libd/libdca/libdca0_0.0.5-7_amd64.deb",
+          "sha256": "6175453be15dc12d95b6a0fec4a96a708dbe73e7930ccc754333c44b7d073fb9",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/libd/libdvbpsi/libdvbpsi9_1.2.0-1_amd64.deb",
+          "sha256": "3744eea732778554b9f4e7f6527c6c2eacf38ab686875e906e66c8a637c99b4e",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/libd/libdvdread/libdvdread4_5.0.0-1_amd64.deb",
+          "sha256": "5cb3bcefa9b4b2bf6512623acef92adaafb7611e16b76dc0967b034071401acd",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/libd/libdvdnav/libdvdnav4_5.0.1-1_amd64.deb",
+          "sha256": "c1b069e3f0706585037eb8bce8bd8a646b248aa8d331eb84e524560a6e74ee17",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/libe/libebml/libebml4_1.3.0-2+deb8u1_amd64.deb",
+          "sha256": "39edcda293914a8bbff38b1be0e8e6ea669d709b7e41077ef8126765ba41703b",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/f/faad2/libfaad2_2.7-8_amd64.deb",
+          "sha256": "27049f44cfb107b2f2d6f1fc24946550c32a2c247f76e67fef858f698f213d3c",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/libl/liblivemedia/libgroupsock1_2014.01.13-1_amd64.deb",
+          "sha256": "28c0389cac5c3189cb12a95949dffe84b020f35b1aebf1116ff34eef52530d3b",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/libc/libcdio/libiso9660-8_0.83-4.2_amd64.deb",
+          "sha256": "8861c0eb3dc5f44a48ccc919bd7d618799f1afac3d1de6eed2c3324872921b44",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/libk/libkate/libkate1_0.4.1-4_amd64.deb",
+          "sha256": "9566f0182ac294e801dffcac4579d831c4432a8e00074f99b2f0c3a92865f55d",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/l/lirc/liblircclient0_0.9.0~pre1-1.2_amd64.deb",
+          "sha256": "c17e76d1fde3f766ab65e70b9c3775a7be9039d78fc6aa99ef6821cf375c90f6",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/libl/liblivemedia/liblivemedia23_2014.01.13-1_amd64.deb",
+          "sha256": "e06a95ce762622956cfd4586344a896a6a3547d75bf5aa2c4bdd06052ab467c8",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/l/lua5.2/liblua5.2-0_5.2.3-1.1_amd64.deb",
+          "sha256": "15c124d025698795b9d6728d7314ff31bed4b1b5c918670834bd66695903f461",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/libm/libmad/libmad0_0.15.1b-8_amd64.deb",
+          "sha256": "e11cdb388c4f53c5f713b5310cb52e1a85017b41dcb236223a8c316f4e58edb5",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/libm/libmatroska/libmatroska6_1.4.1-2+deb8u1_amd64.deb",
+          "sha256": "b351f9867c7a7ac4b8839cc37879b9fc80177c43ab03f2527399a7ddf6335abf",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/libm/libmodplug/libmodplug1_0.8.8.4-4.1+b1_amd64.deb",
+          "sha256": "f45e9603bb07304bebea11458716ec25c77f3cc0f20f67e08e094ae47201f8b3",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/libm/libmpc/libmpcdec6_0.1~r459-4.1_amd64.deb",
+          "sha256": "3cdbcb852df928f48b8820b1aea9aa2ddfce1cc522c96ff596d077487fb295b3",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/m/mpeg2dec/libmpeg2-4_0.5.1-7_amd64.deb",
+          "sha256": "8f076c8a95f0257e85371926fbbc431af4e78908109bc8824eb0d3c8afcf17b5",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/libm/libmtp/libmtp-common_1.1.8-1_all.deb",
+          "sha256": "40c4de31f98586a1f0129a491dd9be3804ae94bc675371b0636e0aeba255db7d",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/libm/libmtp/libmtp9_1.1.8-1+b1_amd64.deb",
+          "sha256": "f54d715e69627f7b4b89864bb4f4dccfe3b405b1a4a2b825e6ee380f186fcaa7",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/libp/libpostproc/libpostproc52_0.git20120821-4_amd64.deb",
+          "sha256": "e7efbb917bca008ee754f5f9a0557f9c4124e4435a762cc283fa7c6285e4235b",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/s/sidplay-libs/libresid-builder0c2a_2.1.1-14_amd64.deb",
+          "sha256": "a2291cf03537ff37bc4823f925c60028bf706b840f44513241b935570aaaf5b8",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/libs/libsamplerate/libsamplerate0_0.1.8-8_amd64.deb",
+          "sha256": "35c0351dbae4468bbb30b70f7e3431acc1b923b56cffca3a1b1c43bfdac95868",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/s/shine/libshine3_3.1.0-2.1_amd64.deb",
+          "sha256": "c4c0424db497df8f0ebbaa7947862436337a209924fdbfd7d8f898c21a5e569d",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/libs/libshout/libshout3_2.3.1-3_amd64.deb",
+          "sha256": "a942ace06f766e9a06cb0bdea7e14722da9b1888d56472b0a9bbbeefdc5f5b53",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/s/sidplay-libs/libsidplay2_2.1.1-14_amd64.deb",
+          "sha256": "5f1be598213d61840e30a7a14635ce2997491ee67196514428a88620c97d3012",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/s/speex/libspeexdsp1_1.2~rc1.2-1_amd64.deb",
+          "sha256": "2c167859760ead0583498fff977ddab97479dfd536d35d3c16c693579f4ca239",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/libs/libssh2/libssh2-1_1.4.3-4.1+deb8u1_amd64.deb",
+          "sha256": "f86ee1ec688ede70acb23d9f7ad6c4bed25a631efe568b483f3cabee391b60f0",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://security.debian.org/debian-security/pool/updates/main/liba/libav/libswscale3_11.8-1~deb8u1_amd64.deb",
+          "sha256": "c1f843e3c3af554781e0c5a67a787a102612f6d7187467ba164691b243275059",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/t/taglib/libtag1-vanilla_1.9.1-2.1_amd64.deb",
+          "sha256": "aa46ae2bd9b6c67e9fbaff61297883e443e54d699ea90698962f9bf3a581a114",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/t/taglib/libtag1c2a_1.9.1-2.1_amd64.deb",
+          "sha256": "2ac7708643b3034529a4824f1e1ed51a755fe821437b6a1df1bd0bb151e92fa7",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/t/twolame/libtwolame0_0.3.13-1.1_amd64.deb",
+          "sha256": "f94149d669b4f80580944dff3f6d798d709070bfb753dafb7ab9be466753c8a7",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/libu/libupnp/libupnp6_1.6.19+git20141001-1_amd64.deb",
+          "sha256": "c12f83453fa9202c411a25c6713ef97f561404b40eaa6243166c573e1e51620e",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/libl/liblivemedia/libusageenvironment1_2014.01.13-1_amd64.deb",
+          "sha256": "dc583daabe815aac08a54d0d62e1a7d40ae1623d68f29ae153ea06c77b3d950c",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/v/vcdimager/libvcdinfo0_0.7.24+dfsg-0.2_amd64.deb",
+          "sha256": "94dc9f262049d5d7aa4af573c2fb46f76616f9fd921000480fccea27bb4f1588",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/v/vlc/libvlc5_2.2.4-1~deb8u1_amd64.deb",
+          "sha256": "d4415c1e7d600bb45c3f9f42844a3f528ebfac8b0af06d0f646c3d39476d5c60",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/z/zvbi/libzvbi-common_0.2.35-3_all.deb",
+          "sha256": "29f72a7c9fcbba2017338ea99ed988173317a4a98b93c91e6658d05c255b1a6f",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/z/zvbi/libzvbi0_0.2.35-3_amd64.deb",
+          "sha256": "1a7b1c907235b3f75f85b263463daf0836a53e1dc432f45fed06e6c5e37e2369",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/v/vlc/vlc-nox_2.2.4-1~deb8u1_amd64.deb",
+          "sha256": "56b0a9a2e3009515f1654a7fc960e528cbb78c054260c12addbd613fd13b9af9",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "url": "http://ftp.us.debian.org/debian/pool/main/v/vlc/vlc_2.2.4-1~deb8u1_amd64.deb",
+          "sha256": "8cfed56989b30bb65dcbe758eaa58b5f4d5b546e38a2068e042b526f1220541d",
+          "dest": "debs"
+        },
+        {
+          "type": "file",
+          "path": "vlc-Makefile",
+          "dest-filename": "Makefile"
+        },
+        {
+ 					"type": "shell",
+					"commands": [
+						"echo '== Unpacking Debian packages =='", 
+						"mkdir tmp-app",
+						"for i in debs/*.deb ; do echo $i ; dpkg-deb -x $i tmp-app ; done",
+						"echo '== Copying bin and lib dirs =='",
+						"cp -r tmp-app/usr/lib tmp-app/usr/bin /app/",
+            "rm -r tmp-app"
+					]
+        }
+      ]
+    }
+  ]
+}

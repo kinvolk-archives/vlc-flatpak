@@ -1,0 +1,11 @@
+[Flatpak Ref]
+Title=vlc
+Name=org.videolan.App
+Branch=master
+Url=@URL@
+IsRuntime=False
+GPGKey=@GPG@
+
+Comment=vlc
+Description=VLC media player
+Icon=https://images.videolan.org/images/largeVLC.png
