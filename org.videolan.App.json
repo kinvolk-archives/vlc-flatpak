@@ -1324,12 +1324,6 @@
         },
         {
           "type": "file",
-          "url": "http://ftp.us.debian.org/debian/pool/main/libm/libmodplug/libmodplug1_0.8.8.4-4.1+b1_amd64.deb",
-          "sha256": "f45e9603bb07304bebea11458716ec25c77f3cc0f20f67e08e094ae47201f8b3",
-          "dest": "debs"
-        },
-        {
-          "type": "file",
           "url": "http://ftp.us.debian.org/debian/pool/main/libm/libmpc/libmpcdec6_0.1~r459-4.1_amd64.deb",
           "sha256": "3cdbcb852df928f48b8820b1aea9aa2ddfce1cc522c96ff596d077487fb295b3",
           "dest": "debs"
