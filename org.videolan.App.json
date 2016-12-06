@@ -334,12 +334,6 @@
         },
         {
           "type": "file",
-          "url": "http://ftp.us.debian.org/debian/pool/main/libs/libselinux/libselinux1_2.3-2_amd64.deb",
-          "sha256": "37bf5f0d0d50579bdff97098ff330cb44dd0148e20db91aa3848dd19c698e528",
-          "dest": "debs"
-        },
-        {
-          "type": "file",
           "url": "http://ftp.us.debian.org/debian/pool/main/a/attr/libattr1_2.4.47-2_amd64.deb",
           "sha256": "ebe8b6a4c62b88db772f05c05b50d8b9f66f4d46488c547bda5042ae36865d88",
           "dest": "debs"
@@ -706,26 +700,8 @@
         },
         {
           "type": "file",
-          "url": "http://ftp.us.debian.org/debian/pool/main/libs/libsemanage/libsemanage-common_2.3-1_all.deb",
-          "sha256": "6cee4cf858797141ecb5775f33a82cb7ffb5d2c047a0fb9f4ed08005b9c33671",
-          "dest": "debs"
-        },
-        {
-          "type": "file",
-          "url": "http://ftp.us.debian.org/debian/pool/main/libs/libsepol/libsepol1_2.3-2_amd64.deb",
-          "sha256": "809665fb316152e1c862873abe1f4358302ab8bdab9b034bbe178f0e68257f56",
-          "dest": "debs"
-        },
-        {
-          "type": "file",
           "url": "http://ftp.us.debian.org/debian/pool/main/u/ustr/libustr-1.0-1_1.0.4-3+b2_amd64.deb",
           "sha256": "e04f13c3b977bdcd80a2d3f9c45bf2ed336fb5398fbb9f86873f722d8bd1784a",
-          "dest": "debs"
-        },
-        {
-          "type": "file",
-          "url": "http://ftp.us.debian.org/debian/pool/main/libs/libsemanage/libsemanage1_2.3-1+b1_amd64.deb",
-          "sha256": "1d8e7b5c75e6b60769241da5f33c6befffb1a8dc5826474b3191f8f1d1690634",
           "dest": "debs"
         },
         {
