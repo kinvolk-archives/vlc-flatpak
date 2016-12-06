@@ -652,12 +652,6 @@
         },
         {
           "type": "file",
-          "url": "http://ftp.us.debian.org/debian/pool/main/d/dbus/libdbus-1-3_1.8.20-0+deb8u1_amd64.deb",
-          "sha256": "a8fb09a445c2c35e087fe8131baa32bfe7f5c4f24e5382c5113bf288c84730bc",
-          "dest": "debs"
-        },
-        {
-          "type": "file",
           "url": "http://ftp.us.debian.org/debian/pool/main/j/json-c/libjson-c2_0.11-4_amd64.deb",
           "sha256": "bde89cf8ff7876889e17fda0245f4dd3e829b6f89e617272637c1692c84dd694",
           "dest": "debs"
