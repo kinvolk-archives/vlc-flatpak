@@ -28,18 +28,6 @@
         },
         {
           "type": "file",
-          "url": "http://ftp.us.debian.org/debian/pool/main/g/glibc/libc6_2.19-18+deb8u6_amd64.deb",
-          "sha256": "ee4d9dea08728e2c2bbf43d819c3c7e61798245fab4b983ae910865980f791ad",
-          "dest": "debs"
-        },
-        {
-          "type": "file",
-          "url": "http://ftp.us.debian.org/debian/pool/main/g/glibc/multiarch-support_2.19-18+deb8u6_amd64.deb",
-          "sha256": "fe270d815cc98e15dc3b42aeeb79ceaab7a7606fef170038111b5ca6dd9c686a",
-          "dest": "debs"
-        },
-        {
-          "type": "file",
           "url": "http://ftp.us.debian.org/debian/pool/main/g/gpm/libgpm2_1.20.4-6.1+b2_amd64.deb",
           "sha256": "673753f8d8f2af5d630463b960157d9086d8253d94b16e019eb81f0c3c056355",
           "dest": "debs"
