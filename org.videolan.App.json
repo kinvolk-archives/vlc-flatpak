@@ -28,18 +28,6 @@
         },
         {
           "type": "file",
-          "url": "http://ftp.us.debian.org/debian/pool/main/g/gcc-4.9/gcc-4.9-base_4.9.2-10_amd64.deb",
-          "sha256": "f95eb436176050f52e85ed5eebe12c3d851b6788735df860e18a219647d330d8",
-          "dest": "debs"
-        },
-        {
-          "type": "file",
-          "url": "http://ftp.us.debian.org/debian/pool/main/g/gcc-4.9/libgcc1_4.9.2-10_amd64.deb",
-          "sha256": "a1402290165e8d91b396a33d79580a4501041e92bdb62ef23929a0c207cd9af9",
-          "dest": "debs"
-        },
-        {
-          "type": "file",
           "url": "http://ftp.us.debian.org/debian/pool/main/g/glibc/libc6_2.19-18+deb8u6_amd64.deb",
           "sha256": "ee4d9dea08728e2c2bbf43d819c3c7e61798245fab4b983ae910865980f791ad",
           "dest": "debs"
@@ -330,12 +318,6 @@
           "type": "file",
           "url": "http://ftp.us.debian.org/debian/pool/main/libf/libffi/libffi6_3.1-2+b2_amd64.deb",
           "sha256": "481af9931f3352a51a579511a20ff3d57068681d6c760513590200a71fe49a50",
-          "dest": "debs"
-        },
-        {
-          "type": "file",
-          "url": "http://ftp.us.debian.org/debian/pool/main/l/llvm-toolchain-3.5/libllvm3.5_3.5-10_amd64.deb",
-          "sha256": "eed6c96c457b8e7e7c4d658dd4cae5ad54e7bd126d6fac89e6371a5e14b3e6c6",
           "dest": "debs"
         },
         {
