@@ -274,18 +274,6 @@
         },
         {
           "type": "file",
-          "url": "http://ftp.us.debian.org/debian/pool/main/w/wayland/libwayland-client0_1.6.0-2_amd64.deb",
-          "sha256": "dfb1cf0048f35ec1da9752ee9966aaf8014d1ee160377d0e4631d526e328ab31",
-          "dest": "debs"
-        },
-        {
-          "type": "file",
-          "url": "http://ftp.us.debian.org/debian/pool/main/w/wayland/libwayland-server0_1.6.0-2_amd64.deb",
-          "sha256": "8954be62de87a6a0a63ca1438b8e6386cd2f2708af2125c1c57ec72421f53893",
-          "dest": "debs"
-        },
-        {
-          "type": "file",
           "url": "http://ftp.us.debian.org/debian/pool/main/m/mesa/libgbm1_10.3.2-1+deb8u1_amd64.deb",
           "sha256": "fb27bb530a7529ddb508d6906e0215f7da45a20ebd1e26330e54c3ac14db328e",
           "dest": "debs"
