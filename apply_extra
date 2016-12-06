@@ -1,0 +1,12 @@
+#!/bin/sh
+
+EXTRA_PACKAGES="libmp3lame0.deb libtwolame0.deb libavcodec56.deb libavcodec-extra-56.deb libx264-142.deb libasound-plugins.deb libdvdcss2.deb"
+
+for pkg in $EXTRA_PACKAGES; do
+	ar x $pkg
+	rm -f $pkg
+	tar xf data.tar.*
+	rm -f control.tar.gz data.tar.* debian-binary
+	cp -R usr/* .
+	rm -rf usr
+done
