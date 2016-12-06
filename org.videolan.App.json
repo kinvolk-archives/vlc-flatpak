@@ -1162,24 +1162,6 @@
         },
         {
           "type": "file",
-          "url": "http://ftp.us.debian.org/debian/pool/main/a/avahi/libavahi-common-data_0.6.31-5_amd64.deb",
-          "sha256": "8366634609f3c4985c7ee01a1d68a9733d3dc6b54831437d8bad9d11f667c639",
-          "dest": "debs"
-        },
-        {
-          "type": "file",
-          "url": "http://ftp.us.debian.org/debian/pool/main/a/avahi/libavahi-common3_0.6.31-5_amd64.deb",
-          "sha256": "83bc43e646989a3f39684cf331b8fc15b009f54b88eeeb9c0851c20f4cc25310",
-          "dest": "debs"
-        },
-        {
-          "type": "file",
-          "url": "http://ftp.us.debian.org/debian/pool/main/a/avahi/libavahi-client3_0.6.31-5_amd64.deb",
-          "sha256": "cd0bf1b525606f38de14b50f88b841177b967273015968a13aa3d848d69729aa",
-          "dest": "debs"
-        },
-        {
-          "type": "file",
           "url": "http://ftp.us.debian.org/debian/pool/main/libr/libraw1394/libraw1394-11_2.1.0-3_amd64.deb",
           "sha256": "11a28cf2fe8cf5791463a01a70f4b06bdc415bdb7d61625d4ce4706ceeb79ab5",
           "dest": "debs"
