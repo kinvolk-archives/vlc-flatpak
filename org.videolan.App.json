@@ -268,12 +268,6 @@
         },
         {
           "type": "file",
-          "url": "http://ftp.us.debian.org/debian/pool/main/s/systemd/libudev1_215-17+deb8u5_amd64.deb",
-          "sha256": "f1f1cb26bee9c2ba2879295a4db3eb4c0646bf2b7f317e74ddb23357e749f648",
-          "dest": "debs"
-        },
-        {
-          "type": "file",
           "url": "http://ftp.us.debian.org/debian/pool/main/m/mesa/libgbm1_10.3.2-1+deb8u1_amd64.deb",
           "sha256": "fb27bb530a7529ddb508d6906e0215f7da45a20ebd1e26330e54c3ac14db328e",
           "dest": "debs"
