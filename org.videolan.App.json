@@ -14,6 +14,7 @@
     "--filesystem=home",
     "--talk-name=org.mpris.MediaPlayer2.Player",
     "--own-name=org.mpris.MediaPlayer2.vlc",
+    "--device=all",
     "--extra-data=libmp3lame0.deb:09d8a1e90eb088d9c87644a110c5577f59128e8a7314e8c4558f862e2fbe336c:352544::http://ftp.us.debian.org/debian/pool/main/l/lame/libmp3lame0_3.99.5+repack1-7+deb8u1_amd64.deb",
     "--extra-data=libtwolame0.deb:f94149d669b4f80580944dff3f6d798d709070bfb753dafb7ab9be466753c8a7:51688::http://ftp.us.debian.org/debian/pool/main/t/twolame/libtwolame0_0.3.13-1.1_amd64.deb",
     "--extra-data=libavcodec56.deb:e8e1d4d57e1b0ba037fc3863a989fe262c921bf05f45b7b0dd14cca9681ce2db:3103900::http://security.debian.org/debian-security/pool/updates/main/liba/libav/libavcodec56_11.8-1~deb8u1_amd64.deb",
