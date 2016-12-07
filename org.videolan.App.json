@@ -1373,12 +1373,24 @@
           "dest": "debs"
         },
         {
-           "type": "file",
-           "path": "apply_extra"
+          "type": "file",
+          "path": "apply_extra"
         },
         {
-           "type": "file",
-           "path": "vlc.sh"
+          "type": "file",
+          "path": "vlc.sh"
+        },
+        {
+          "type": "file",
+          "path": "org.videolan.App.png"
+        },
+        {
+          "type": "file",
+          "path": "org.videolan.App.desktop"
+        },
+        {
+          "type": "file",
+          "path": "org.videolan.App.appdata.xml"
         },
         {
           "type": "file",
