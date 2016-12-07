@@ -1398,15 +1398,15 @@
           "dest-filename": "Makefile"
         },
         {
- 					"type": "shell",
-					"commands": [
-						"echo '== Unpacking Debian packages =='", 
-						"mkdir tmp-app",
-						"for i in debs/*.deb ; do echo $i ; dpkg-deb -x $i tmp-app ; done",
-						"echo '== Copying bin and lib dirs =='",
-						"cp -r tmp-app/usr/lib tmp-app/usr/bin /app/",
+          "type": "shell",
+          "commands": [
+            "echo '== Unpacking Debian packages =='",
+            "mkdir tmp-app",
+            "for i in debs/*.deb ; do echo $i ; dpkg-deb -x $i tmp-app ; done",
+            "echo '== Copying bin and lib dirs =='",
+            "cp -r tmp-app/usr/lib tmp-app/usr/bin /app/",
             "rm -r tmp-app"
-					]
+          ]
         }
       ]
     }
