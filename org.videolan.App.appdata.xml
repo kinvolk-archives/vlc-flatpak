@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component type="desktop">
-  <id>com.CodeBlocks.App.desktop</id>
+  <id>org.videolan.App.desktop</id>
   <metadata_license>CC0-1.0</metadata_license>
-  <summary>IDE for C, C++ and Fortran</summary>
+  <summary>VLC is a free and open source cross-platform multimedia player and framework that plays most multimedia files as well as DVDs, Audio CDs, VCDs, and various streaming protocols.</summary>
   <description>
     <p>
-     Code::Blocks is a highly extensible Integrated Development Environment (IDE) for the C, C++ and Fortran programming languages. It features support for a wide range of compilers, parallel builds, multi-target projects, and also provides an interface with GNU GDB.
+      VLC media player is a highly portable multimedia player and multimedia framework capable of reading most audio and video formats as well as DVDs, Audio CDs VCDs, and various streaming protocols.
     </p>
     <p>
-    The code editor in Code::Blocks features: syntax highlighting, code folding, a tabbed interface, code completion, a class browser and smart indenting.
+      It can also be used as a media converter or a server to stream in uni-cast or multi-cast in IPv4 or IPv6 on networks.
     </p>
   </description>
-  <url type="homepage">http://www.codeblocks.org/</url>
+  <url type="homepage">http://www.videolan.org/</url>
   <screenshots>
     <screenshot type="default">
-      <image>http://www.codeblocks.org/images/stories/imagebrowser/scr1.png</image>
+      <image>https://images.videolan.org/vlc/screenshots/1.0.0/VLC_Gnome.png</image>
     </screenshot>
   </screenshots>
-  <project_license>GPL-3.0+</project_license>
-  <developer_name>The Code::Blocks team</developer_name>
-  <url type="bugtracker">https://sourceforge.net/p/codeblocks/tickets/</url>
-  <url type="help">http://codeblocks.org/user-manual</url>
+  <project_license>GPL-2.0+</project_license>
+  <developer_name>VLC authors and VideoLAN</developer_name>
+  <url type="bugtracker">https://trac.videolan.org/vlc</url>
+  <url type="help">https://www.videolan.org/doc/</url>
 </component>
