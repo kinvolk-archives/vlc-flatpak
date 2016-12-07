@@ -6,3 +6,5 @@ install:
 	# install vlc.sh /app/bin/vlc
 	# cp /usr/bin/ar /app/bin
 	# cp /usr/lib/libbfd-*.so /app/lib
+	find /usr/lib/*/ -name "*.so" -type f -exec ln -s {} /app/lib 2> /dev/null \;
+	find /app/lib/*/ -name "*.so" -type f -exec ln -s {} /app/lib 2> /dev/null \;
