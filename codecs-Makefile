@@ -1,0 +1,10 @@
+all:
+	true
+
+install:
+	install apply_extra /app/bin
+	install vlc.sh /app/bin/vlc
+	mkdir -p /app/src/vlc
+	install vlc-lua53-compat.patch /app/src/vlc
+	cp /usr/bin/ar /app/bin
+	cp /usr/lib/libbfd-*.so /app/lib
