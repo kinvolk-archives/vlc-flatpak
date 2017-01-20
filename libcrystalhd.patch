@@ -1,0 +1,55 @@
+--- a/linux_lib/libcrystalhd/Makefile
++++ b/linux_lib/libcrystalhd/Makefile
+@@ -7,7 +7,7 @@
+ BCLIB_NAME=libcrystalhd.so
+ BCLIB_SL=$(BCLIB_NAME).$(BCLIB_MAJOR)
+ BCLIB=$(BCLIB_NAME).$(BCLIB_MAJOR).$(BCLIB_MINOR)
+-LIBDIR=/usr/lib
++LIBDIR=/app/lib
+ 
+ AT   = @
+ ECHO = ${AT} echo
+@@ -15,7 +15,7 @@
+ 
+ ROOTDIR = ../..
+ 
+-INCLUDES = -I./ -I/usr/include -I$(ROOTDIR)/include
++INCLUDES = -I./ -I/app/include -I$(ROOTDIR)/include
+ INCLUDES += -I$(ROOTDIR)/include/link
+ 
+ 
+@@ -53,20 +53,20 @@
+ 
+ install:
+ 	mkdir -p $(DESTDIR)$(LIBDIR)
+-	mkdir -p $(DESTDIR)/lib/firmware
+-	mkdir -p $(DESTDIR)/usr/include/libcrystalhd
+-	cp libcrystalhd_if.h $(DESTDIR)/usr/include/libcrystalhd/
+-	chmod 0644 $(DESTDIR)/usr/include/libcrystalhd/libcrystalhd_if.h
+-	cp $(ROOTDIR)/include/bc_dts_defs.h $(DESTDIR)/usr/include/libcrystalhd/
+-	chmod 0644 $(DESTDIR)/usr/include/libcrystalhd/bc_dts_defs.h
+-	cp $(ROOTDIR)/include/bc_dts_types.h $(DESTDIR)/usr/include/libcrystalhd/
+-	chmod 0644 $(DESTDIR)/usr/include/libcrystalhd/bc_dts_types.h
+-	cp $(ROOTDIR)/include/libcrystalhd_version.h $(DESTDIR)/usr/include/libcrystalhd/
+-	chmod 0644 $(DESTDIR)/usr/include/libcrystalhd/libcrystalhd_version.h
+-	cp $(ROOTDIR)/firmware/fwbin/70012/bcm70012fw.bin $(DESTDIR)/lib/firmware/
+-	chmod 0644 $(DESTDIR)/lib/firmware/bcm70012fw.bin
+-	cp $(ROOTDIR)/firmware/fwbin/70015/bcm70015fw.bin $(DESTDIR)/lib/firmware/
+-	chmod 0644 $(DESTDIR)/lib/firmware/bcm70015fw.bin
++	mkdir -p $(DESTDIR)/app/lib/firmware
++	mkdir -p $(DESTDIR)/app/include/libcrystalhd
++	cp libcrystalhd_if.h $(DESTDIR)/app/include/libcrystalhd/
++	chmod 0644 $(DESTDIR)/app/include/libcrystalhd/libcrystalhd_if.h
++	cp $(ROOTDIR)/include/bc_dts_defs.h $(DESTDIR)/app/include/libcrystalhd/
++	chmod 0644 $(DESTDIR)/app/include/libcrystalhd/bc_dts_defs.h
++	cp $(ROOTDIR)/include/bc_dts_types.h $(DESTDIR)/app/include/libcrystalhd/
++	chmod 0644 $(DESTDIR)/app/include/libcrystalhd/bc_dts_types.h
++	cp $(ROOTDIR)/include/libcrystalhd_version.h $(DESTDIR)/app/include/libcrystalhd/
++	chmod 0644 $(DESTDIR)/app/include/libcrystalhd/libcrystalhd_version.h
++	cp $(ROOTDIR)/firmware/fwbin/70012/bcm70012fw.bin $(DESTDIR)/app/lib/firmware/
++	chmod 0644 $(DESTDIR)/app/lib/firmware/bcm70012fw.bin
++	cp $(ROOTDIR)/firmware/fwbin/70015/bcm70015fw.bin $(DESTDIR)/app/lib/firmware/
++	chmod 0644 $(DESTDIR)/app/lib/firmware/bcm70015fw.bin
+ 	install -m 755 $(BCLIB) $(DESTDIR)$(LIBDIR)
+ 	(cd $(DESTDIR)$(LIBDIR); ln -sf $(BCLIB) $(BCLIB_NAME))
+ 	(cd $(DESTDIR)$(LIBDIR); ln -sf $(BCLIB) $(BCLIB_SL))

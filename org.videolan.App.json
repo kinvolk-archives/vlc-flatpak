@@ -1,8 +1,8 @@
 {
   "app-id": "org.videolan.App",
-  "runtime": "org.freedesktop.Sdk",
-  "runtime-version": "1.4",
-  "sdk": "org.freedesktop.Sdk",
+  "runtime": "com.endlessm.Platform",
+  "runtime-version": "eos3.1",
+  "sdk": "com.endlessm.Sdk",
   "branch": "2.2.4",
   "command": "vlc",
   "separate-locales": false,
@@ -39,7 +39,7 @@
     "--extra-data=libshine3.deb:c4c0424db497df8f0ebbaa7947862436337a209924fdbfd7d8f898c21a5e569d:25534::http://ftp.us.debian.org/debian/pool/main/s/shine/libshine3_3.1.0-2.1_amd64.deb",
     "--extra-data=libfaad2.deb:27049f44cfb107b2f2d6f1fc24946550c32a2c247f76e67fef858f698f213d3c:178222::http://ftp.us.debian.org/debian/pool/main/f/faad2/libfaad2_2.7-8_amd64.deb",
     "--extra-data=librtmp1.deb:639377e8325a830c5c0607cd6ae06e4f909771b87c9d16cc5de389b29bd7fbec:59808::http://ftp.us.debian.org/debian/pool/main/r/rtmpdump/librtmp1_2.4+20150115.gita107cef-1_amd64.deb",
-    "--extra-data=libgnutls-deb0.deb:fa400bcdabe9293b93f96011c41a9b0c4b7a9d190b22175d634c9188a5396ec0:693608::http://ftp.us.debian.org/debian/pool/main/g/gnutls28/libgnutls-deb0-28_3.3.8-6+deb8u3_amd64.deb",
+    "--extra-data=libgnutls-deb0.deb:fbe15f6bdc0b8dfd03912a89be0f1171e1676778a7fc43c0989c7a3e1fad1800:694786::http://ftp.us.debian.org/debian/pool/main/g/gnutls28/libgnutls-deb0-28_3.3.8-6+deb8u4_amd64.deb",
     "--extra-data=libsidplay2.deb:5f1be598213d61840e30a7a14635ce2997491ee67196514428a88620c97d3012:113066::http://ftp.us.debian.org/debian/pool/main/s/sidplay-libs/libsidplay2_2.1.1-14_amd64.deb",
     "--extra-data=libresid-builder0c2a.deb:a2291cf03537ff37bc4823f925c60028bf706b840f44513241b935570aaaf5b8:39762::http://ftp.us.debian.org/debian/pool/main/s/sidplay-libs/libresid-builder0c2a_2.1.1-14_amd64.deb",
     "--extra-data=libmpcdec6.deb:3cdbcb852df928f48b8820b1aea9aa2ddfce1cc522c96ff596d077487fb295b3:31260::http://ftp.us.debian.org/debian/pool/main/libm/libmpc/libmpcdec6_0.1~r459-4.1_amd64.deb",
@@ -412,6 +412,16 @@
       ]
     },
     {
+      "name": "yasm",
+      "sources": [
+        {
+          "type": "archive",
+          "url": "http://www.tortall.net/projects/yasm/releases/yasm-1.3.0.tar.gz",
+          "sha256": "3dce6601b495f5b3d45b59f7d2492a340ee7e84b5beca17e48f862502bd5603f"
+        }
+      ]
+    },
+    {
       "name": "libvpx",
       "config-opts": [
         "--enable-runtime-cpu-detect",
@@ -446,6 +456,7 @@
         "--disable-cxx",
         "--disable-gl",
         "--disable-csharp",
+        "--disable-java",
         "--disable-static"
       ],
       "make-install-args": [
@@ -498,6 +509,10 @@
     },
     {
       "name": "lirc",
+      "config-opts": [
+        "--disable-doc",
+        "--with-systemdsystemunitdir=/app/lib/systemd/system/"
+      ],
       "sources": [
         {
           "type": "archive",
@@ -563,37 +578,6 @@
           "type": "archive",
           "url": "https://dbus.freedesktop.org/releases/dbus-glib/dbus-glib-0.108.tar.gz",
           "sha256": "9f340c7e2352e9cdf113893ca77ca9075d9f8d5e81476bf2bf361099383c602c"
-        }
-      ]
-    },
-    {
-      "name": "dbus-python",
-      "sources": [
-        {
-          "type": "archive",
-          "url": "https://dbus.freedesktop.org/releases/dbus-python/dbus-python-1.2.4.tar.gz",
-          "sha256": "e2f1d6871f74fba23652e51d10873e54f71adab0525833c19bad9e99b1b2f9cc"
-        }
-      ]
-    },
-    {
-      "name": "avahi",
-      "config-opts": [
-        "--disable-monodoc",
-        "--disable-gtk",
-        "--disable-gtk3",
-        "--disable-qt3",
-        "--disable-libdaemon",
-        "--disable-pygtk",
-        "--disable-mono",
-        "--enable-compat-libdns_sd",
-        "--with-distro=none"
-      ],
-      "sources": [
-        {
-          "type": "archive",
-          "url": "https://github.com/lathiat/avahi/releases/download/v0.6.32/avahi-0.6.32.tar.gz",
-          "sha256": "d54991185d514a0aba54ebeb408d7575b60f5818a772e28fa0e18b98bc1db454"
         }
       ]
     },
@@ -664,6 +648,19 @@
           "type": "archive",
           "url": "https://www.libsdl.org/projects/SDL_image/release/SDL_image-1.2.12.tar.gz",
           "sha256": "0b90722984561004de84847744d566809dbb9daf732a9e503b91a1b5a84e5699"
+        }
+      ]
+    },
+    {
+      "name": "orc",
+      "config-opts": [
+        "--disable-static"
+      ],
+      "sources": [
+        {
+          "type": "archive",
+          "url": "https://gstreamer.freedesktop.org/data/src/orc/orc-0.4.26.tar.xz",
+          "sha256": "7d52fa80ef84988359c3434e1eea302d077a08987abdde6905678ebcad4fa649"
         }
       ]
     },
@@ -906,8 +903,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://github.com/LibVNC/libvncserver/archive/LibVNCServer-0.9.11.tar.gz",
-          "sha256": "193d630372722a532136fd25c5326b2ca1a636cbb8bf9bb115ef869c804d2894"
+          "url": "https://github.com/LibVNC/libvncserver/archive/LibVNCServer-0.9.10.tar.gz",
+          "sha256": "ed10819a5bfbf269969f97f075939cc38273cc1b6d28bccfb0999fba489411f7"
         }
       ]
     },
@@ -928,6 +925,92 @@
           "type": "archive",
           "url": "https://ftp.videolan.org/videolan/libdvdnav/5.0.3/libdvdnav-5.0.3.tar.bz2",
           "sha256": "5097023e3d2b36944c763f1df707ee06b19dc639b2b68fb30113a5f2cbf60b6d"
+        }
+      ]
+    },
+    {
+      "name": "xcb-util-keysyms",
+      "config-opts": [
+        "--disable-static"
+      ],
+      "sources": [
+        {
+          "type": "archive",
+          "url": "https://xcb.freedesktop.org/dist/xcb-util-keysyms-0.4.0.tar.bz2",
+          "sha256": "0ef8490ff1dede52b7de533158547f8b454b241aa3e4dcca369507f66f216dd9"
+        }
+      ]
+    },
+    {
+      "name": "libglvnd",
+      "config-opts": [
+        "--disable-static"
+      ],
+      "sources": [
+        {
+          "type": "archive",
+          "url": "https://github.com/NVIDIA/libglvnd/archive/v0.1.1.tar.gz",
+          "sha256": "6ae0e646214426512010165226db75a0f9974f8d417a6aa19f158a152814c9f1"
+        }
+      ]
+    },
+    {
+      "name": "libusb",
+      "sources": [
+        {
+          "type": "archive",
+          "url": "https://github.com/libusb/libusb/archive/v1.0.21.tar.gz",
+          "sha256": "1a5b08c05bc5e38c81c2d59c29954d5916646f4ff46f51381b3f624384e4ac01"
+        }
+      ]
+    },
+    {
+      "name": "libmtp",
+      "config-opts": [
+        "--with-udev=/app/lib/udev"
+      ],
+      "sources": [
+        {
+          "type": "archive",
+          "url": "https://kent.dl.sourceforge.net/project/libmtp/libmtp/1.1.12/libmtp-1.1.12.tar.gz",
+          "sha256": "cdf59e816c6cda3e908a876c7fb42943f40b85669aea0029a1ca431c89afa1a0"
+        }
+      ]
+    },
+    {
+      "name": "libcrystalhd",
+      "no-autogen": true,
+      "subdir": "linux_lib/libcrystalhd",
+      "sources": [
+        {
+          "type": "archive",
+          "url": "https://src.fedoraproject.org/repo/pkgs/libcrystalhd/libcrystalhd-20120405.tar.bz2/d1db00097b3e72f548da035a11b7a8f8/libcrystalhd-20120405.tar.bz2",
+          "sha256": "6a274a59440e69b11a18029b3ae0c3dda4c82d336a468b2f8daeabb54ce8df91"
+        },
+        {
+          "type": "patch",
+          "path": "libcrystalhd.patch"
+        }
+      ]
+    },
+    {
+      "name": "libva",
+      "sources": [
+        {
+          "type": "archive",
+          "url": "https://freedesktop.org/software/vaapi/releases/libva/libva-1.7.3.tar.bz2",
+          "sha256": "22bc139498065a7950d966dbdb000cad04905cbd3dc8f3541f80d36c4670b9d9"
+        }
+      ]
+    },
+    {
+      "name": "freerdp",
+      "cmake": true,
+      "sources": [
+        {
+          "type": "git",
+          "url": "https://github.com/FreeRDP/FreeRDP",
+          "branch": "stable-1.1"
         }
       ]
     }

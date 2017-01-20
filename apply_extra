@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 EXTRA_DEB_PACKAGES=(
 	libmp3lame0.deb
