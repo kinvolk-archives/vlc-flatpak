@@ -311,41 +311,6 @@
       ]
     },
     {
-      "name": "qt",
-      "build-options": {
-        "env": {
-          "LD_LIBRARY_PATH": "/usr/lib:/app/lib:/run/build/qt/lib"
-        }
-      },
-      "config-opts": [
-        "-confirm-license", "-opensource",
-        "-prefix", "/app",
-        "-plugin-sql-sqlite",
-        "-system-sqlite",
-        "-no-phonon",
-        "-no-phonon-backend",
-        "-no-webkit",
-        "-graphicssystem", "raster",
-        "-openssl-linked",
-        "-nomake", "demos",
-        "-nomake", "examples",
-        "-nomake", "docs",
-        "-silent",
-        "-no-rpath",
-        "-optimized-qmake",
-        "-no-reduce-relocations",
-        "-dbus-linked",
-        "-no-openvg"
-      ],
-      "sources": [
-        {
-          "type": "archive",
-          "url": "https://download.qt.io/official_releases/qt/4.8/4.8.7/qt-everywhere-opensource-src-4.8.7.tar.gz",
-          "sha256": "e2882295097e47fe089f8ac741a95fef47e0a73a3f3cdf21b56990638f626ea0"
-        }
-      ]
-    },
-    {
       "name": "libidn",
       "sources": [
         {
@@ -761,20 +726,6 @@
       ]
     },
     {
-      "name": "libass",
-      "config-opts": [
-        "--enable-harfbuzz",
-        "--enable-fontconfig"
-      ],
-      "sources": [
-        {
-          "type": "archive",
-          "url": "https://github.com/libass/libass/releases/download/0.13.5/libass-0.13.5.tar.xz",
-          "sha256": "9387a2421b6e6a132c7d473de594b9f0367aa85af64aa103b66f0861431b1596"
-        }
-      ]
-    },
-    {
       "name": "gmp",
       "config-opts": [
         "--enable-shared"
@@ -794,55 +745,6 @@
           "type": "archive",
           "url": "https://ftp.gnu.org/gnu/nettle/nettle-2.7.1.tar.gz",
           "sha256": "bc71ebd43435537d767799e414fce88e521b7278d48c860651216e1fc6555b40"
-        }
-      ]
-    },
-    {
-      "name": "libtasn1",
-      "config-opts": [
-        "--disable-gcc-warnings",
-        "--disable-gtk-doc"
-      ],
-      "sources": [
-        {
-          "type": "archive",
-          "url": "https://ftp.gnu.org/gnu/libtasn1/libtasn1-4.9.tar.gz",
-          "sha256": "4f6f7a8fd691ac2b8307c8ca365bad711db607d4ad5966f6938a9d2ecd65c920"
-        }
-      ]
-    },
-    {
-      "name": "p11-kit",
-      "sources": [
-        {
-          "type": "archive",
-          "url": "https://p11-glue.freedesktop.org/releases/p11-kit-0.23.2.tar.gz",
-          "sha256": "ba726ea8303c97467a33fca50ee79b7b35212964be808ecf9b145e9042fdfaf0"
-        }
-      ]
-    },
-    {
-      "name": "zlib",
-      "sources": [
-        {
-          "type": "archive",
-          "url": "http://zlib.net/zlib-1.2.11.tar.xz",
-          "sha256": "4ff941449631ace0d4d203e3483be9dbc9da454084111f97ea0a2114e19bf066"
-        }
-      ]
-    },
-    {
-      "name": "bzip2",
-      "no-autogen": true,
-      "sources": [
-        {
-          "type": "archive",
-          "url": "http://www.bzip.org/1.0.6/bzip2-1.0.6.tar.gz",
-          "sha256": "a2848f34fcd5d6cf47def00461fcb528a0484d8edef8208d6d2e2909dc61d9cd"
-        },
-        {
-          "type": "patch",
-          "path": "bzip2.patch"
         }
       ]
     },
