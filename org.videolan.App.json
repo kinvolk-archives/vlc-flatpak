@@ -473,20 +473,6 @@
       ]
     },
     {
-      "name": "lirc",
-      "config-opts": [
-        "--disable-doc",
-        "--with-systemdsystemunitdir=/app/lib/systemd/system/"
-      ],
-      "sources": [
-        {
-          "type": "archive",
-          "url": "https://heanet.dl.sourceforge.net/project/lirc/LIRC/0.9.4c/lirc-0.9.4c.tar.bz2",
-          "sha256": "8974fe5dc8eaa717daab6785d2aefeec27615f01ec24b96d31e3381b2f70726a"
-        }
-      ]
-    },
-    {
       "name": "fftw",
       "config-opts": [
         "--enable-shared",
