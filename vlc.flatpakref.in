@@ -1,6 +1,6 @@
 [Flatpak Ref]
 Title=vlc
-Name=org.videolan.App
+Name=org.videolan.VLC
 Branch=master
 Url=@URL@
 IsRuntime=False
