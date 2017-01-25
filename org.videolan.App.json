@@ -243,45 +243,6 @@
       ]
     },
     {
-      "name": "pulseaudio",
-      "config-opts": [
-        "--prefix=/app",
-        "--libexecdir=/app/lib",
-        "--with-database=tdb",
-        "--disable-tcpwrap",
-        "--disable-bluez4",
-        "--disable-samplerate",
-        "--disable-rpath",
-        "--disable-default-build-tests",
-        "--without-caps"
-      ],
-      "sources": [
-        {
-          "type": "archive",
-          "url": "https://freedesktop.org/software/pulseaudio/releases/pulseaudio-9.0.tar.xz",
-          "sha256": "c3d3d66b827f18fbe903fe3df647013f09fc1e2191c035be1ee2d82a9e404686"
-        }
-      ]
-    },
-    {
-      "name": "alsa-lib",
-      "config-opts": [
-        "--disable-maintainer-mode",
-        "--enable-shared",
-        "--disable-resmgr",
-        "--enable-rawmidi",
-        "--enable-seq",
-        "--enable-aload"
-      ],
-      "sources": [
-        {
-          "type": "archive",
-          "url": "http://ftp.osuosl.org/pub/blfs/conglomeration/alsa-lib/alsa-lib-1.1.2.tar.bz2",
-          "sha256": "d38dacd9892b06b8bff04923c380b38fb2e379ee5538935ff37e45b395d861d6"
-        }
-      ]
-    },
-    {
       "name": "libgpg-error",
       "config-opts": [
         "--enable-threads"
