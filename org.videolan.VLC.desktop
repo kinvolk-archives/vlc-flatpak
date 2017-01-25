@@ -4,6 +4,6 @@ Name=VLC media player
 GenericName=Media player
 Comment=VLC media player
 Exec="/app/bin/vlc"
-Icon=org.videolan.App
+Icon=org.videolan.VLC
 Terminal=false
 Categories=AudioVideo;Audio;Video;Network;

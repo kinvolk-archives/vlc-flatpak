@@ -1,5 +1,5 @@
 {
-  "app-id": "org.videolan.App",
+  "app-id": "org.videolan.VLC",
   "runtime": "com.endlessm.Platform",
   "runtime-version": "eos3.1",
   "sdk": "com.endlessm.Sdk",
