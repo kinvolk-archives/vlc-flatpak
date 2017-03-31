@@ -101,7 +101,7 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://heanet.dl.sourceforge.net/project/mad/libmad/0.15.1b/libmad-0.15.1b.tar.gz",
+          "url": "https://downloads.sourceforge.net/project/mad/libmad/0.15.1b/libmad-0.15.1b.tar.gz",
           "sha256": "bbfac3ed6bfbc2823d3775ebb931087371e142bb0e9bb1bee51a76a6e0078690"
         },
         {
@@ -214,7 +214,7 @@
       "sources": [
         {
           "type": "archive",
-          "url": "http://ftp.kernel.org/pub/linux/libs/ieee1394/libraw1394-2.1.2.tar.xz",
+          "url": "https://www.kernel.org/pub/linux/libs/ieee1394/libraw1394-2.1.2.tar.xz",
           "sha256": "03ccc69761d22c7deb1127fc301010dd13e70e44bb7134b8ff0d07590259a55e"
         }
       ]
@@ -227,7 +227,7 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://heanet.dl.sourceforge.net/project/libavc1394/libavc1394/libavc1394-0.5.4.tar.gz",
+          "url": "https://downloads.sourceforge.net/project/libavc1394/libavc1394/libavc1394-0.5.4.tar.gz",
           "sha256": "7cb1ff09506ae911ca9860bef4af08c2403f3e131f6c913a2cbd6ddca4215b53"
         }
       ]
@@ -383,7 +383,7 @@
       "sources": [
         {
           "type": "archive",
-          "url": "http://netassist.dl.sourceforge.net/project/zapping/zvbi/0.2.35/zvbi-0.2.35.tar.bz2",
+          "url": "http://downloads.sourceforge.net/project/zapping/zvbi/0.2.35/zvbi-0.2.35.tar.bz2",
           "sha256": "fc883c34111a487c4a783f91b1b2bb5610d8d8e58dcba80c7ab31e67e4765318"
         }
       ]
@@ -396,7 +396,7 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://heanet.dl.sourceforge.net/project/libdc1394/libdc1394-2/2.2.4/libdc1394-2.2.4.tar.gz",
+          "url": "https://downloads.sourceforge.net/project/libdc1394/libdc1394-2/2.2.4/libdc1394-2.2.4.tar.gz",
           "sha256": "a93689a353c241884a98727128f315ecf9965db70dca710b08af10e5fa0d2e6f"
         }
       ]
@@ -406,7 +406,7 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://vorboss.dl.sourceforge.net/project/libcddb/libcddb/1.3.2/libcddb-1.3.2.tar.bz2",
+          "url": "https://downloads.sourceforge.net/project/libcddb/libcddb/1.3.2/libcddb-1.3.2.tar.bz2",
           "sha256": "35ce0ee1741ea38def304ddfe84a958901413aa829698357f0bee5bb8f0a223b"
         }
       ]
@@ -464,7 +464,7 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://heanet.dl.sourceforge.net/project/aa-project/aa-lib/1.4rc5/aalib-1.4rc5.tar.gz",
+          "url": "https://downloads.sourceforge.net/project/aa-project/aa-lib/1.4rc5/aalib-1.4rc5.tar.gz",
           "sha256": "fbddda9230cf6ee2a4f5706b4b11e2190ae45f5eda1f0409dc4f99b35e0a70ee"
         }
       ]
@@ -477,7 +477,7 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://netcologne.dl.sourceforge.net/project/libpng/libpng12/1.2.56/libpng-1.2.56.tar.xz",
+          "url": "https://downloads.sourceforge.net/project/libpng/libpng12/1.2.56/libpng-1.2.56.tar.xz",
           "sha256": "24ce54581468b937734a6ecc86f7e121bc46a90d76a0d948dca08f32ee000dbe"
         }
       ]
@@ -501,7 +501,7 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://heanet.dl.sourceforge.net/project/lirc/LIRC/0.9.4c/lirc-0.9.4c.tar.bz2",
+          "url": "https://downloads.sourceforge.net/project/lirc/LIRC/0.9.4c/lirc-0.9.4c.tar.bz2",
           "sha256": "8974fe5dc8eaa717daab6785d2aefeec27615f01ec24b96d31e3381b2f70726a"
         }
       ]
@@ -547,7 +547,7 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://netix.dl.sourceforge.net/project/pupnp/pupnp/libUPnP%201.6.20/libupnp-1.6.20.tar.bz2",
+          "url": "https://downloads.sourceforge.net/project/pupnp/pupnp/libUPnP%201.6.20/libupnp-1.6.20.tar.bz2",
           "sha256": "ee3537081e3ea56f66ada10387486823989210bc98002f098305551c966e3a63"
         }
       ]
@@ -619,7 +619,7 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://heanet.dl.sourceforge.net/project/openjpeg.mirror/1.5.2/openjpeg-1.5.2.tar.gz",
+          "url": "https://downloads.sourceforge.net/project/openjpeg.mirror/1.5.2/openjpeg-1.5.2.tar.gz",
           "sha256": "15df7b194a5d8dba0052cd21c17a4dc761149a770a907d73fffb972078c28a87"
         },
         {
