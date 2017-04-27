@@ -1,6 +1,6 @@
 include Makefile.config
 
-json := org.videolan.App.json
+json := org.videolan.VLC.json
 app := vlc
 
 all: test
