@@ -1,7 +1,7 @@
 {
-  "app-id": "org.videolan.App",
+  "app-id": "org.videolan.VLC",
   "runtime": "org.freedesktop.Sdk",
-  "runtime-version": "1.4",
+  "runtime-version": "1.6",
   "sdk": "org.freedesktop.Sdk",
   "branch": "2.2.4",
   "command": "vlc",
@@ -14,47 +14,10 @@
     "--filesystem=home",
     "--talk-name=org.mpris.MediaPlayer2.Player",
     "--own-name=org.mpris.MediaPlayer2.vlc",
-    "--device=all",
-    "--env=LD_LIBRARY_PATH=/app/lib:/app/lib64:/app/lib/x86_64-linux-gnu:/app/extra/lib:/app/extra/lib/vlc:/app/extra/lib/x86_64-linux-gnu:/app/extra/lib/x86_64-linux-gnu/alsa-lib",
-    "--extra-data=libmp3lame0.deb:09d8a1e90eb088d9c87644a110c5577f59128e8a7314e8c4558f862e2fbe336c:352544::http://ftp.us.debian.org/debian/pool/main/l/lame/libmp3lame0_3.99.5+repack1-7+deb8u1_amd64.deb",
-    "--extra-data=libtwolame0.deb:f94149d669b4f80580944dff3f6d798d709070bfb753dafb7ab9be466753c8a7:51688::http://ftp.us.debian.org/debian/pool/main/t/twolame/libtwolame0_0.3.13-1.1_amd64.deb",
-    "--extra-data=libmpeg2-4.deb:8f076c8a95f0257e85371926fbbc431af4e78908109bc8824eb0d3c8afcf17b5:63290::http://ftp.us.debian.org/debian/pool/main/m/mpeg2dec/libmpeg2-4_0.5.1-7_amd64.deb",
-    "--extra-data=liba52.deb:36f9d936e36f07e57c994f911c7890bc02ccb62507a2e90210b6e3870f34c2d8:35050::http://ftp.us.debian.org/debian/pool/main/a/a52dec/liba52-0.7.4_0.7.4-17_amd64.deb",
-    "--extra-data=libdca0.deb:6175453be15dc12d95b6a0fec4a96a708dbe73e7930ccc754333c44b7d073fb9:98070::http://ftp.us.debian.org/debian/pool/main/libd/libdca/libdca0_0.0.5-7_amd64.deb",
-    "--extra-data=libxvidcore4.deb:91171c49bf7db84356f8a0e2662d572a7a86d89147e531d01945d03d69d573f4:282256::http://ftp.us.debian.org/debian/pool/main/x/xvidcore/libxvidcore4_1.3.3-1_amd64.deb",
-    "--extra-data=libpostproc52.deb:e7efbb917bca008ee754f5f9a0557f9c4124e4435a762cc283fa7c6285e4235b:26598::http://ftp.us.debian.org/debian/pool/main/libp/libpostproc/libpostproc52_0.git20120821-4_amd64.deb",
-    "--extra-data=libavutil54.deb:34f2812d237d060bfeeff56795eb0aa94eb9b0abfec29e18824df5f58cce0223:127708::http://security.debian.org/debian-security/pool/updates/main/liba/libav/libavutil54_11.8-1~deb8u1_amd64.deb",
-    "--extra-data=libavresample2.deb:df897cdc4f34a2927d2913a17cc859b09fb0050ad5808028ace9eb1ace61f8e7:100264::http://security.debian.org/debian-security/pool/updates/main/liba/libav/libavresample2_11.8-1~deb8u1_amd64.deb",
-    "--extra-data=libavcodec56.deb:e8e1d4d57e1b0ba037fc3863a989fe262c921bf05f45b7b0dd14cca9681ce2db:3103900::http://security.debian.org/debian-security/pool/updates/main/liba/libav/libavcodec56_11.8-1~deb8u1_amd64.deb",
-    "--extra-data=libavcodec-extra-56.deb:c8dc8c2b06972fdde2586480f91e73f133c96a2619ef9772024b98b01e7ba95b:3107564::http://security.debian.org/debian-security/pool/updates/main/liba/libav/libavcodec-extra-56_11.8-1~deb8u1_amd64.deb",
-    "--extra-data=libavformat56.deb:9560e7867352604348dfec41b85e24de661d09b0198889ea46acd094b13a5ec6:581998::http://security.debian.org/debian-security/pool/updates/main/liba/libav/libavformat56_11.8-1~deb8u1_amd64.deb",
-    "--extra-data=libswscale3.deb:c1f843e3c3af554781e0c5a67a787a102612f6d7187467ba164691b243275059:141348::http://security.debian.org/debian-security/pool/updates/main/liba/libav/libswscale3_11.8-1~deb8u1_amd64.deb",
-    "--extra-data=libx264-142.deb:8425f36e01b971773bfc3307631b0d171016aa731baa0d865cf30653977aed28:586596::http://ftp.us.debian.org/debian/pool/main/x/x264/libx264-142_0.142.2431+gita5831aa-1+b2_amd64.deb",
-    "--extra-data=libasound-plugins.deb:58542ca8e2f498888249e10fb50300da5b2533959d881a8d2881b60f6f8b9fa5:71736::http://ftp.us.debian.org/debian/pool/main/a/alsa-plugins/libasound2-plugins_1.0.28-1+b1_amd64.deb",
-    "--extra-data=libdvdcss2.deb:3f856252ef91333f9212e3ae1ee6018d560ef31dd2853902a6979adcc2a06a24:44462::https://download.videolan.org/debian/stable/libdvdcss2_1.2.13-0_amd64.deb",
-    "--extra-data=libvo-aacenc0.deb:ef7333df21551235db58182cebf57c132f1eca8284e291c2588449c7208bc2c0:62582::http://ftp.us.debian.org/debian/pool/main/v/vo-aacenc/libvo-aacenc0_0.1.3-1_amd64.deb",
-    "--extra-data=libvo-amrwbenc0.deb:a5fa02740969c580fcbc06bed0f781aef6890e7120f1903779a5f9b06f14ce65:59356::http://ftp.us.debian.org/debian/pool/main/v/vo-amrwbenc/libvo-amrwbenc0_0.1.3-1_amd64.deb",
-    "--extra-data=libopencore-amrnb0.deb:378a1876e2441cd13cedfce79bfd5aaad9f19e054773ee1e97bd886426b5247d:92352::http://ftp.us.debian.org/debian/pool/main/o/opencore-amr/libopencore-amrnb0_0.1.3-2.1_amd64.deb",
-    "--extra-data=libopencore-amrwb0.deb:f937bc1d351db9ba6289b4328c760495b0b3cfa97d83c33cd7ccc0c98baf785c:46190::http://ftp.us.debian.org/debian/pool/main/o/opencore-amr/libopencore-amrwb0_0.1.3-2.1_amd64.deb",
-    "--extra-data=libshine3.deb:c4c0424db497df8f0ebbaa7947862436337a209924fdbfd7d8f898c21a5e569d:25534::http://ftp.us.debian.org/debian/pool/main/s/shine/libshine3_3.1.0-2.1_amd64.deb",
-    "--extra-data=libfaad2.deb:27049f44cfb107b2f2d6f1fc24946550c32a2c247f76e67fef858f698f213d3c:178222::http://ftp.us.debian.org/debian/pool/main/f/faad2/libfaad2_2.7-8_amd64.deb",
-    "--extra-data=librtmp1.deb:639377e8325a830c5c0607cd6ae06e4f909771b87c9d16cc5de389b29bd7fbec:59808::http://ftp.us.debian.org/debian/pool/main/r/rtmpdump/librtmp1_2.4+20150115.gita107cef-1_amd64.deb",
-    "--extra-data=libgnutls-deb0.deb:fa400bcdabe9293b93f96011c41a9b0c4b7a9d190b22175d634c9188a5396ec0:693608::http://ftp.us.debian.org/debian/pool/main/g/gnutls28/libgnutls-deb0-28_3.3.8-6+deb8u3_amd64.deb",
-    "--extra-data=libsidplay2.deb:5f1be598213d61840e30a7a14635ce2997491ee67196514428a88620c97d3012:113066::http://ftp.us.debian.org/debian/pool/main/s/sidplay-libs/libsidplay2_2.1.1-14_amd64.deb",
-    "--extra-data=libresid-builder0c2a.deb:a2291cf03537ff37bc4823f925c60028bf706b840f44513241b935570aaaf5b8:39762::http://ftp.us.debian.org/debian/pool/main/s/sidplay-libs/libresid-builder0c2a_2.1.1-14_amd64.deb",
-    "--extra-data=libmpcdec6.deb:3cdbcb852df928f48b8820b1aea9aa2ddfce1cc522c96ff596d077487fb295b3:31260::http://ftp.us.debian.org/debian/pool/main/libm/libmpc/libmpcdec6_0.1~r459-4.1_amd64.deb",
-    "--extra-data=libvcdinfo0.deb:94dc9f262049d5d7aa4af573c2fb46f76616f9fd921000480fccea27bb4f1588:123274::http://ftp.us.debian.org/debian/pool/main/v/vcdimager/libvcdinfo0_0.7.24+dfsg-0.2_amd64.deb",
-    "--extra-data=liblivemedia23.deb:e06a95ce762622956cfd4586344a896a6a3547d75bf5aa2c4bdd06052ab467c8:277990::http://ftp.us.debian.org/debian/pool/main/libl/liblivemedia/liblivemedia23_2014.01.13-1_amd64.deb",
-    "--extra-data=libgroupsock1.deb:28c0389cac5c3189cb12a95949dffe84b020f35b1aebf1116ff34eef52530d3b:26318::http://ftp.us.debian.org/debian/pool/main/libl/liblivemedia/libgroupsock1_2014.01.13-1_amd64.deb",
-    "--extra-data=libbasicusageenvironment0.deb:b557d596be0e064aeb5678e6ab269c7ede9fd0f5b23ac4e0d110dbcc4457739b:20542::http://ftp.us.debian.org/debian/pool/main/libl/liblivemedia/libbasicusageenvironment0_2014.01.13-1_amd64.deb",
-    "--extra-data=libusageenvironment1.deb:dc583daabe815aac08a54d0d62e1a7d40ae1623d68f29ae153ea06c77b3d950c:11460::http://ftp.us.debian.org/debian/pool/main/libl/liblivemedia/libusageenvironment1_2014.01.13-1_amd64.deb",
-    "--extra-data=vlc-data.deb:ea1f614cf4fa80e722db8b2272dd50bfd3759db66fde33058d1b58a0d247240d:5991856::http://ftp.us.debian.org/debian/pool/main/v/vlc/vlc-data_2.2.4-1~deb8u1_all.deb",
-    "--extra-data=libvlccore8.deb:73cdda1f551662662d2b1fc65ecfae53007b0da0663ceabad70fce64c49f3f1c:391538::http://ftp.us.debian.org/debian/pool/main/v/vlc/libvlccore8_2.2.4-1~deb8u1_amd64.deb",
-    "--extra-data=libvlc5.deb:d4415c1e7d600bb45c3f9f42844a3f528ebfac8b0af06d0f646c3d39476d5c60:47300::http://ftp.us.debian.org/debian/pool/main/v/vlc/libvlc5_2.2.4-1~deb8u1_amd64.deb",
-    "--extra-data=vlc-nox.deb:56b0a9a2e3009515f1654a7fc960e528cbb78c054260c12addbd613fd13b9af9:2530574::http://ftp.us.debian.org/debian/pool/main/v/vlc/vlc-nox_2.2.4-1~deb8u1_amd64.deb",
-    "--extra-data=vlc.deb:8cfed56989b30bb65dcbe758eaa58b5f4d5b546e38a2068e042b526f1220541d:1501062::http://ftp.us.debian.org/debian/pool/main/v/vlc/vlc_2.2.4-1~deb8u1_amd64.deb"
+    "--device=all"
   ],
   "modules": [
+    "shared-modules/qt4/qt4-4.8.7-minimal.json",
     {
       "name": "lua",
       "no-autogen": true,
@@ -311,70 +274,12 @@
       ]
     },
     {
-      "name": "qt",
-      "build-options": {
-        "env": {
-          "LD_LIBRARY_PATH": "/usr/lib:/app/lib:/run/build/qt/lib"
-        }
-      },
-      "config-opts": [
-        "-confirm-license", "-opensource",
-        "-prefix", "/app",
-        "-plugin-sql-sqlite",
-        "-system-sqlite",
-        "-no-phonon",
-        "-no-phonon-backend",
-        "-no-webkit",
-        "-graphicssystem", "raster",
-        "-openssl-linked",
-        "-nomake", "demos",
-        "-nomake", "examples",
-        "-nomake", "docs",
-        "-silent",
-        "-no-rpath",
-        "-optimized-qmake",
-        "-no-reduce-relocations",
-        "-dbus-linked",
-        "-no-openvg"
-      ],
-      "sources": [
-        {
-          "type": "archive",
-          "url": "https://download.qt.io/official_releases/qt/4.8/4.8.7/qt-everywhere-opensource-src-4.8.7.tar.gz",
-          "sha256": "e2882295097e47fe089f8ac741a95fef47e0a73a3f3cdf21b56990638f626ea0"
-        }
-      ]
-    },
-    {
       "name": "libidn",
       "sources": [
         {
           "type": "archive",
           "url": "https://ftp.gnu.org/gnu/libidn/libidn-1.33.tar.gz",
           "sha256": "44a7aab635bb721ceef6beecc4d49dfd19478325e1b47f3196f7d2acc4930e19"
-        }
-      ]
-    },
-    {
-      "name": "vlc",
-      "no-autogen": true,
-      "sources": [
-        {
-          "type": "file",
-          "path": "apply_extra"
-        },
-        {
-          "type": "file",
-          "path": "vlc.sh"
-        },
-        {
-          "type": "file",
-          "path": "vlc-lua53-compat.patch"
-        },
-        {
-          "type": "file",
-          "path": "codecs-Makefile",
-          "dest-filename": "Makefile"
         }
       ]
     },
@@ -479,20 +384,6 @@
           "type": "archive",
           "url": "https://downloads.sourceforge.net/project/libpng/libpng12/1.2.56/libpng-1.2.56.tar.xz",
           "sha256": "24ce54581468b937734a6ecc86f7e121bc46a90d76a0d948dca08f32ee000dbe"
-        }
-      ]
-    },
-    {
-      "name": "directfb",
-      "config-opts": [
-        "--disable-static",
-        "--disable-vnc"
-      ],
-      "sources": [
-        {
-          "type": "archive",
-          "url": "http://directfb.net/downloads/Core/DirectFB-1.2/DirectFB-1.2.10.tar.gz",
-          "sha256": "0690376be3ee1dbc78ffe29b231f4c8410946e7a2a6dfa15989908b87adfc3be"
         }
       ]
     },
@@ -835,21 +726,6 @@
       ]
     },
     {
-      "name": "bzip2",
-      "no-autogen": true,
-      "sources": [
-        {
-          "type": "archive",
-          "url": "http://www.bzip.org/1.0.6/bzip2-1.0.6.tar.gz",
-          "sha256": "a2848f34fcd5d6cf47def00461fcb528a0484d8edef8208d6d2e2909dc61d9cd"
-        },
-        {
-          "type": "patch",
-          "path": "bzip2.patch"
-        }
-      ]
-    },
-    {
       "name": "libebml",
       "sources": [
         {
@@ -928,6 +804,62 @@
           "type": "archive",
           "url": "https://ftp.videolan.org/videolan/libdvdnav/5.0.3/libdvdnav-5.0.3.tar.bz2",
           "sha256": "5097023e3d2b36944c763f1df707ee06b19dc639b2b68fb30113a5f2cbf60b6d"
+        }
+      ]
+    },
+    {
+      "name": "libmodplug",
+      "sources": [
+        {
+          "type": "archive",
+          "url": "http://downloads.sourceforge.net/modplug-xmms/libmodplug-0.8.8.5.tar.gz",
+          "sha256": "77462d12ee99476c8645cb5511363e3906b88b33a6b54362b4dbc0f39aa2daad"
+        }
+      ]
+    },
+    {
+      "name": "ffmpeg",
+      "config-opts": [
+        "--enable-pic",
+        "--enable-shared",
+        "--disable-static"
+      ],
+      "sources": [
+        {
+          "type": "archive",
+          "url": "https://ffmpeg.org/releases/ffmpeg-2.8.9.tar.xz",
+          "sha256": "11bd97f3f3b9608869147a20d59bec7c8d02fbd951a13c6c29cb777d700860e8"
+        }
+      ]
+    },
+    {
+      "name": "a52dec",
+      "build-options": {
+        "cflags": "-O2 -g -fPIC"
+      },
+      "sources": [
+        {
+          "type": "archive",
+          "url": "http://liba52.sourceforge.net/files/a52dec-0.7.4.tar.gz",
+          "sha256": "a21d724ab3b3933330194353687df82c475b5dfb997513eef4c25de6c865ec33"
+        }
+      ]
+    },
+    {
+      "name": "vlc",
+      "sources": [
+        {
+          "type": "archive",
+          "url": "https://download.videolan.org/vlc/2.2.4/vlc-2.2.4.tar.xz",
+          "sha256": "1632e91d2a0087e0ef4c3fb4c95c3c2890f7715a9d1d43ffd46329f428cf53be"
+        },
+        {
+          "type": "patch",
+          "path": "lua53_compat.patch"
+        },
+        {
+          "type": "patch",
+          "path": "vlc-desktop.patch"
         }
       ]
     }
