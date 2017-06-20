@@ -6,7 +6,9 @@ app := vlc
 all: test
 
 test: repo $(json)
-	flatpak-builder --force-clean --repo=repo --ccache --require-changes $(app) $(json)
+	flatpak-builder --build-only --ccache --require-changes --force-clean $(app) $(json)
+	flatpak-builder --run $(app) $(json) /app/lib/vlc/vlc-cache-gen /app/lib/vlc/plugins
+	flatpak-builder --finish-only --repo=repo $(app) $(json)
 	flatpak build-update-repo repo
 
 release: release-repo $(json)
