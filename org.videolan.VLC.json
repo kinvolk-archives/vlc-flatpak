@@ -1,11 +1,15 @@
 {
   "app-id": "org.videolan.VLC",
-  "runtime": "org.freedesktop.Sdk",
-  "runtime-version": "1.6",
-  "sdk": "org.freedesktop.Sdk",
-  "branch": "2.2.4",
+  "runtime": "org.kde.Platform",
+  "runtime-version": "5.9",
+  "sdk": "org.kde.Sdk",
+  "branch": "master",
   "command": "vlc",
   "separate-locales": false,
+  "rename-desktop-file": "vlc.desktop",
+  "rename-appdata-file": "vlc.appdata.xml",
+  "rename-icon": "vlc",
+  "copy-icon": true,
   "finish-args": [
     "--share=ipc",
     "--socket=x11",
@@ -17,7 +21,6 @@
     "--device=all"
   ],
   "modules": [
-    "shared-modules/qt4/qt4-4.8.7-minimal.json",
     {
       "name": "lua",
       "no-autogen": true,
@@ -43,41 +46,6 @@
         {
           "type": "patch",
           "path": "lua-install_top.patch"
-        }
-      ]
-    },
-    {
-      "name": "libmad",
-      "config-opts": [
-        "--enable-accuracy",
-        "--disable-avcodec"
-      ],
-      "build-options": {
-        "arch": {
-          "x86_64": {
-            "config-opts": [
-              "--enable-fpm=64bit"
-            ]
-          }
-        }
-      },
-      "sources": [
-        {
-          "type": "archive",
-          "url": "https://downloads.sourceforge.net/project/mad/libmad/0.15.1b/libmad-0.15.1b.tar.gz",
-          "sha256": "bbfac3ed6bfbc2823d3775ebb931087371e142bb0e9bb1bee51a76a6e0078690"
-        },
-        {
-          "type": "patch",
-          "path": "libmad-0.15.1b-cflags.patch"
-        },
-        {
-          "type": "patch",
-          "path": "libmad-0.15.1b-cflags-O2.patch"
-        },
-        {
-          "type": "patch",
-          "path": "libmad-0.15.1b-gcc44-mips-h-constraint-removal.patch"
         }
       ]
     },
@@ -140,8 +108,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "http://downloads.xiph.org/releases/flac/flac-1.3.1.tar.xz",
-          "sha256": "4773c0099dba767d963fd92143263be338c48702172e8754b9bc5103efe1c56c"
+          "url": "http://downloads.xiph.org/releases/flac/flac-1.3.2.tar.xz",
+          "sha256": "91cfc3ed61dc40f47f050a109b08610667d73477af6ef36dcad31c31a4a8d53f"
         }
       ]
     },
@@ -200,47 +168,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://www.samba.org/ftp/tdb/tdb-1.3.12.tar.gz",
-          "sha256": "60134e32253cac8e2efe5e0185d20123c208bcf6ad15edf2f50d80daadf8c348"
-        }
-      ]
-    },
-    {
-      "name": "pulseaudio",
-      "config-opts": [
-        "--prefix=/app",
-        "--libexecdir=/app/lib",
-        "--with-database=tdb",
-        "--disable-tcpwrap",
-        "--disable-bluez4",
-        "--disable-samplerate",
-        "--disable-rpath",
-        "--disable-default-build-tests",
-        "--without-caps"
-      ],
-      "sources": [
-        {
-          "type": "archive",
-          "url": "https://freedesktop.org/software/pulseaudio/releases/pulseaudio-9.0.tar.xz",
-          "sha256": "c3d3d66b827f18fbe903fe3df647013f09fc1e2191c035be1ee2d82a9e404686"
-        }
-      ]
-    },
-    {
-      "name": "alsa-lib",
-      "config-opts": [
-        "--disable-maintainer-mode",
-        "--enable-shared",
-        "--disable-resmgr",
-        "--enable-rawmidi",
-        "--enable-seq",
-        "--enable-aload"
-      ],
-      "sources": [
-        {
-          "type": "archive",
-          "url": "http://ftp.osuosl.org/pub/blfs/conglomeration/alsa-lib/alsa-lib-1.1.2.tar.bz2",
-          "sha256": "d38dacd9892b06b8bff04923c380b38fb2e379ee5538935ff37e45b395d861d6"
+          "url": "https://www.samba.org/ftp/tdb/tdb-1.3.14.tar.gz",
+          "sha256": "3a7d4bb79229460df530c7e1c7067ba9fb9d370aa61fff537fdc2bdf918acbe9"
         }
       ]
     },
@@ -252,8 +181,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "http://ftp.osuosl.org/pub/blfs/conglomeration/libgpg-error/libgpg-error-1.25.tar.bz2",
-          "sha256": "f628f75843433b38b05af248121beb7db5bd54bb2106f384edac39934261320c"
+          "url": "https://www.gnupg.org/ftp/gcrypt/libgpg-error/libgpg-error-1.27.tar.bz2",
+          "sha256": "4f93aac6fecb7da2b92871bb9ee33032be6a87b174f54abf8ddf0911a22d29d2"
         }
       ]
     },
@@ -268,8 +197,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "http://gd.tuwien.ac.at/pub/gnupg/libgcrypt/libgcrypt-1.7.4.tar.bz2",
-          "sha256": "3b67862e2f4711e25c4ce3cc4b48d52a58a3afdcd1d8c6a57f93a1c0ef03e5c6"
+          "url": "https://www.gnupg.org/ftp/gcrypt/libgcrypt/libgcrypt-1.7.8.tar.bz2",
+          "sha256": "948276ea47e6ba0244f36a17b51dcdd52cfd1e664b0a1ac3bc82134fb6cec199"
         }
       ]
     },
@@ -323,6 +252,7 @@
         "--enable-shared",
         "--enable-pic",
         "--disable-examples",
+        "--disable-unit-tests",
         "--disable-install-docs",
         "--disable-install-srcs",
         "--enable-vp8",
@@ -334,12 +264,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://github.com/webmproject/libvpx/archive/v1.3.0.tar.gz",
-          "sha256": "db72881e1c34e4ae92666847844f35dd2dd431bcf6284500b1b396464f882f64"
-        },
-        {
-          "type": "patch",
-          "path": "libvpx-max_align_t.patch"
+          "url": "https://github.com/webmproject/libvpx/archive/v1.6.1.tar.gz",
+          "sha256": "cda8bb6f0e4848c018177d3a576fa83ed96d762554d7010fe4cfb9d70c22e588"
         }
       ]
     },
@@ -382,8 +308,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://downloads.sourceforge.net/project/libpng/libpng12/1.2.56/libpng-1.2.56.tar.xz",
-          "sha256": "24ce54581468b937734a6ecc86f7e121bc46a90d76a0d948dca08f32ee000dbe"
+          "url": "https://downloads.sourceforge.net/project/libpng/libpng12/1.2.57/libpng-1.2.57.tar.xz",
+          "sha256": "0f4620e11fa283fedafb474427c8e96bf149511a1804bdc47350963ae5cf54d8"
         }
       ]
     },
@@ -392,13 +318,14 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://downloads.sourceforge.net/project/lirc/LIRC/0.9.4c/lirc-0.9.4c.tar.bz2",
-          "sha256": "8974fe5dc8eaa717daab6785d2aefeec27615f01ec24b96d31e3381b2f70726a"
+          "url": "https://downloads.sourceforge.net/project/lirc/LIRC/0.9.4d/lirc-0.9.4d.tar.bz2",
+          "sha256": "c68f18c35b489b865c0a741d119b136e8702191538cd3551b977a7af6c4e41ab"
         }
       ]
     },
     {
       "name": "fftw",
+      "rm-configure": true,
       "config-opts": [
         "--enable-shared",
         "--enable-threads",
@@ -407,19 +334,35 @@
       "sources": [
         {
           "type": "archive",
-          "url": "http://www.fftw.org/fftw-3.3.5.tar.gz",
-          "sha256": "8ecfe1b04732ec3f5b7d279fdb8efcad536d555f9d1e8fabd027037d45ea8bcf"
+          "url": "http://www.fftw.org/fftw-3.3.6-pl2.tar.gz",
+          "sha256": "a5de35c5c824a78a058ca54278c706cdf3d4abba1c56b63531c2cb05f5d57da2"
+        },
+        {
+          "type": "patch",
+          "path": "fftw-no-mtune.patch"
         }
       ]
     },
     {
       "name": "chromaprint",
       "cmake": true,
+      "modules": [
+        {
+          "name": "protobuf",
+          "sources": [
+            {
+              "type": "archive",
+              "url": "https://github.com/google/protobuf/releases/download/v2.6.1/protobuf-2.6.1.tar.bz2",
+              "sha256": "ee445612d544d885ae240ffbcbf9267faa9f593b7b101f21d58beceb92661910"
+            }
+          ]
+        }
+      ],
       "sources": [
         {
           "type": "archive",
-          "url": "https://bitbucket.org/acoustid/chromaprint/downloads/chromaprint-1.2.tar.gz",
-          "sha256": "822b8949a322ac04c6f8a3ed78f5e689bcc493c6ca0972bf627c913c8430031a"
+          "url": "https://bitbucket.org/acoustid/chromaprint/downloads/chromaprint-1.4.2.tar.gz",
+          "sha256": "989609a7e841dd75b34ee793bd1d049ce99a8f0d444b3cea39d57c3e5d26b4d4"
         }
       ]
     },
@@ -474,6 +417,7 @@
         "--disable-gtk",
         "--disable-gtk3",
         "--disable-qt3",
+        "--disable-qt4",
         "--disable-libdaemon",
         "--disable-pygtk",
         "--disable-mono",
@@ -525,40 +469,6 @@
       ]
     },
     {
-      "name": "sdl",
-      "config-opts": [
-        "--disable-nasm",
-        "--enable-alsa",
-        "--with-x",
-        "--disable-rpath",
-        "--disable-static"
-      ],
-      "sources": [
-        {
-          "type": "archive",
-          "url": "https://www.libsdl.org/release/SDL-1.2.15.tar.gz",
-          "sha256": "d6d316a793e5e348155f0dd93b979798933fb98aa1edebcc108829d6474aad00"
-        },
-        {
-          "type": "patch",
-          "path": "sdl-const_XData32.patch"
-        }
-      ]
-    },
-    {
-      "name": "sdl-image",
-      "config-opts": [
-        "--disable-static"
-      ],
-      "sources": [
-        {
-          "type": "archive",
-          "url": "https://www.libsdl.org/projects/SDL_image/release/SDL_image-1.2.12.tar.gz",
-          "sha256": "0b90722984561004de84847744d566809dbb9daf732a9e503b91a1b5a84e5699"
-        }
-      ]
-    },
-    {
       "name": "schroedinger",
       "sources": [
         {
@@ -580,8 +490,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "http://downloads.us.xiph.org/releases/opus/opus-1.1.3.tar.gz",
-          "sha256": "58b6fe802e7e30182e95d0cde890c0ace40b6f125cffc50635f0ad2eef69b633"
+          "url": "https://archive.mozilla.org/pub/opus/opus-1.2.1.tar.gz",
+          "sha256": "cfafd339ccd9c5ef8d6ab15d7e1a412c054bf4cb4ecbbbcc78c12ef2def70732"
         }
       ]
     },
@@ -589,8 +499,7 @@
       "name": "gsm",
       "no-autogen": true,
       "build-options": {
-        "cflags": "-fPIC",
-        "ccflags": "-c -fPIC"
+        "cflags": "-fPIC"
       },
       "make-install-args": [
         "-j1",
@@ -617,12 +526,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://download.videolan.org/pub/libdvbpsi/1.2.0/libdvbpsi-1.2.0.tar.bz2",
-          "sha256": "36d9b233306e48b58999e87864253b564e20932ed46a485e44ef7058f1f927e8"
-        },
-        {
-          "type": "patch",
-          "path": "libdvbpsi.patch"
+          "url": "https://download.videolan.org/pub/libdvbpsi/1.3.1/libdvbpsi-1.3.1.tar.bz2",
+          "sha256": "d68367afd5ad8e6ebca813e7958a3ceb9743b421adb4265eceeb6a3511c84420"
         }
       ]
     },
@@ -663,8 +568,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://github.com/libass/libass/releases/download/0.13.5/libass-0.13.5.tar.xz",
-          "sha256": "9387a2421b6e6a132c7d473de594b9f0367aa85af64aa103b66f0861431b1596"
+          "url": "https://github.com/libass/libass/releases/download/0.13.7/libass-0.13.7.tar.xz",
+          "sha256": "7065e5f5fb76e46f2042a62e7c68d81e5482dbeeda24644db1bd066e44da7e9d"
         }
       ]
     },
@@ -700,8 +605,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://ftp.gnu.org/gnu/libtasn1/libtasn1-4.9.tar.gz",
-          "sha256": "4f6f7a8fd691ac2b8307c8ca365bad711db607d4ad5966f6938a9d2ecd65c920"
+          "url": "https://ftp.gnu.org/gnu/libtasn1/libtasn1-4.12.tar.gz",
+          "sha256": "6753da2e621257f33f5b051cc114d417e5206a0818fe0b1ecfd6153f70934753"
         }
       ]
     },
@@ -743,8 +648,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://dl.matroska.org/downloads/libmatroska/libmatroska-1.4.5.tar.bz2",
-          "sha256": "79023fa46901e5562b27d93a9dd168278fa101361d7fd11a35e84e58e11557bc"
+          "url": "https://dl.matroska.org/downloads/libmatroska/libmatroska-1.4.7.tar.bz2",
+          "sha256": "46441eb3bae9f970f68affaa211dd74302a7072dcd2becfb1114da11b66525fa"
         }
       ]
     },
@@ -758,8 +663,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://ftp.gnu.org/gnu/libcdio/libcdio-0.83.tar.gz",
-          "sha256": "235017e3eccb86424f9c108f2c5d5fca62630bda8c9dcf23b425ba9c5e2482c0"
+          "url": "https://ftp.gnu.org/gnu/libcdio/libcdio-0.94.tar.gz",
+          "sha256": "96e2c903f866ae96f9f5b9048fa32db0921464a2286f5b586c0f02699710025a"
         },
         {
           "type": "patch",
@@ -818,44 +723,94 @@
       ]
     },
     {
-      "name": "ffmpeg",
+      "name": "libbluray",
       "config-opts": [
         "--enable-pic",
         "--enable-shared",
-        "--disable-static"
+        "--disable-static",
+        "--disable-bdjava-jar",
+        "--disable-examples",
+        "--disable-doxygen-doc",
+        "--disable-doxygen-dot"
       ],
       "sources": [
         {
           "type": "archive",
-          "url": "https://ffmpeg.org/releases/ffmpeg-2.8.9.tar.xz",
-          "sha256": "11bd97f3f3b9608869147a20d59bec7c8d02fbd951a13c6c29cb777d700860e8"
+          "url": "https://videolan.org/pub/videolan/libbluray/1.0.1/libbluray-1.0.1.tar.bz2",
+          "sha256": "0f9f9a1db2f48cafc70ed2596ff3594b597e2027408f5f2be6191c245d67853a"
         }
       ]
     },
     {
-      "name": "a52dec",
-      "build-options": {
-        "cflags": "-O2 -g -fPIC"
-      },
+      "name": "x264",
+      "config-opts": [
+        "--enable-pic",
+        "--enable-shared"
+      ],
+      "modules": [
+        {
+          "name": "nasm",
+          "sources": [
+            {
+              "type": "archive",
+              "url": "http://www.nasm.us/pub/nasm/releasebuilds/2.13.01/nasm-2.13.01.tar.bz2",
+              "sha256": "08f97baf0a7f892128c6413cfa93b69dc5825fbbd06c70928aea028835d198fa"
+            }
+          ]
+        }
+      ],
       "sources": [
         {
-          "type": "archive",
-          "url": "http://liba52.sourceforge.net/files/a52dec-0.7.4.tar.gz",
-          "sha256": "a21d724ab3b3933330194353687df82c475b5dfb997513eef4c25de6c865ec33"
+          "type": "git",
+          "url": "https://git.videolan.org/git/x264.git"
         }
       ]
     },
+    {
+      "name": "x265",
+      "cmake": true,
+      "builddir": true,
+      "subdir": "source",
+      "sources": [
+        {
+          "type": "archive",
+          "url": "http://ftp.videolan.org/pub/videolan/x265/x265_2.5.tar.gz",
+          "sha256": "2e53259b504a7edb9b21b9800163b1ff4c90e60c74e23e7001d423c69c5d3d17"
+        }
+      ]
+    },
+    {
+      "name": "ffmpeg",
+      "config-opts": [
+        "--enable-pic",
+        "--enable-shared",
+        "--disable-static",
+        "--disable-doc"
+      ],
+      "sources": [
+        {
+          "type": "archive",
+          "url": "http://ffmpeg.org/releases/ffmpeg-3.3.3.tar.bz2",
+          "sha256": "1069ac8fc7f52e566bea28b41b9c437246aeb5096f82fb26fa96dc7d5a10a473"
+        }
+      ]
+    },
+
     {
       "name": "vlc",
+      "config-opts": [
+        "--with-pic",
+        "--disable-rpath",
+        "--disable-silent-rules",
+        "--disable-optimizations",
+        "--disable-dependency-tracking",
+        "--disable-a52",
+        "BUILDCC=/usr/bin/gcc"
+      ],
       "sources": [
         {
-          "type": "archive",
-          "url": "https://download.videolan.org/vlc/2.2.4/vlc-2.2.4.tar.xz",
-          "sha256": "1632e91d2a0087e0ef4c3fb4c95c3c2890f7715a9d1d43ffd46329f428cf53be"
-        },
-        {
-          "type": "patch",
-          "path": "lua53_compat.patch"
+          "type": "git",
+          "url": "https://git.videolan.org/git/vlc.git"
         },
         {
           "type": "patch",
